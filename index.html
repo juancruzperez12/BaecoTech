@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>BAECO TECH</title>
+    <link rel="shortcut icon" href="isotipo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="logo-intro">
+      <img src="isotipo.png" alt="Logo" id="intro-logo" />
+    </div>
+    <nav class="navbar">
+      <a href="index.html">
+        <img src="logo completo.png" class="logotipo" alt="logotipo" />
+      </a>
+      <div class="hamburger-menu" id="hamburger-menu">&#9776;</div>
+      <ul class="top-nav">
+        <li class="nav-item">
+          <a href="servicios.html" class="navlist">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a href="contacto.html" class="navlist-contacto">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="gallery-container" id="gallery-container">
+      <div class="gallery-slide" id="gallery-slide">
+        <img src="gallery-img-1.png" alt="Imagen 1" class="large-screen" />
+        <img src="gallery-img-2.png" alt="Imagen 2" class="large-screen" />
+        <img src="gallery-img-3.png" alt="Imagen 3" class="large-screen" />
+        <img
+          src="gallery-img-1-vertical.png"
+          alt="Imagen 1"
+          class="small-screen"
+        />
+        <img
+          src="gallery-img-2-vertical.png"
+          alt="Imagen 2"
+          class="small-screen"
+        />
+        <img
+          src="gallery-img-3-vertical.png"
+          alt="Imagen 3"
+          class="small-screen"
+        />
+      </div>
+      <a class="prev" id="prev">&#10094;</a>
+      <a class="next" id="next">&#10095;</a>
+      <div class="indicator-container" id="indicator-container"></div>
+    </div>
+
+    <footer>
+      <div class="contenedor-footer">
+        <div class="lista-footer">
+          <a href="servicios.html" class="footer-link">Servicios</a>
+          <a href="contacto.html" class="footer-link">Contacto</a>
+        </div>
+
+        <div class="social-icons">
+          <a href="https://web.whatsapp.com/">
+            <img src="icon-wa.png" alt="icon whatsapp" />
+          </a>
+          <a href="https://www.facebook.com/">
+            <img src="icon-fb.png" alt="icon facebook" />
+          </a>
+          <a href="https://web.instagram.com/404">
+            <img src="icon-ig.png" alt="icon instagram" />
+          </a>
+          <a href="https://www.twitter.com/">
+            <img src="icon-tw.png" alt="icon twitter" />
+          </a>
+          <a href="https://www.youtube.com/">
+            <img src="icon-yt.png" alt="icon youtube" />
+          </a>
+        </div>
+      </div>
+
+      <div class="derechos">
+        <p>BAECO TECH</p>
+      </div>
+    </footer>
+  </body>
+  <script src="burger.js"></script>
+  <script src="intro.js"></script>
+  <script src="gallery.js"></script>
+</html>
