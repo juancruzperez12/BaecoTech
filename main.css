@@ -627,14 +627,13 @@ textarea {
 
 footer {
   width: 100%;
-  padding-top: 25vh;
+  padding: 10em 5em 1em 5em;
 }
 
 .contenedor-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 2em;
 }
 
 .lista-footer {
@@ -664,6 +663,12 @@ footer {
   margin-top: 0;
 }
 
+.derechos a {
+  color: #08b6fd;
+  font-style: italic;
+  text-decoration: none;
+}
+
 .social-icons {
   display: flex;
   gap: 15px;
@@ -679,11 +684,34 @@ footer {
 }
 
 @media (max-width: 767px) {
+  footer {
+    padding: 10em 1.5em 0.5em 1.5em;
+  }
+  .contenedor-footer {
+    display: inline;
+  }
   .social-icons {
-    margin-right: 10px;
+    margin-right: 0px;
+    margin-top: 20px;
+    gap: 10px;
+    justify-content: center;
+  }
+  .social-icons img {
+    margin: 10px;
   }
   .lista-footer {
     margin: 10px 10px;
+  }
+  .footer-link:hover {
+    color: #c0c0c0;
+  }
+  .derechos {
+    margin-top: 15px;
+  }
+  .derechos a {
+    color: #08b6fd;
+    font-style: italic;
+    text-decoration: none;
   }
 }
 /* cierra css footer */
