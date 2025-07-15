@@ -87,7 +87,7 @@ grizón: #272727
 
 .logotipo {
   display: block;
-  width: 266px;
+  width: 454px;
   height: 80px;
 }
 .top-nav {
@@ -222,7 +222,7 @@ grizón: #272727
   }
 
   .logotipo {
-    width: 133px;
+    width: 227px;
     height: 40px;
     margin-top: auto;
     margin-bottom: auto;
@@ -239,7 +239,7 @@ grizón: #272727
 }
 @media (min-width: 768px) and (max-width: 1920px) {
   .logotipo {
-    width: 200px;
+    width: 385px;
     height: 60px;
   }
   .navlist {
@@ -249,7 +249,7 @@ grizón: #272727
 }
 @media (min-width: 1921px) {
   .logotipo {
-    width: 400px;
+    width: 680px;
     height: 120px;
   }
   .navlist {
