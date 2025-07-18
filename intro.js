@@ -4,5 +4,5 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.style.overflow = "auto";
     document.querySelector("nav").style.display = "flex";
     document.getElementById("sedes").style.display = "block";
-  }, 2000);
+  }, 1500);
 });
