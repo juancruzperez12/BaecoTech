@@ -807,11 +807,11 @@ textarea::placeholder {
 
 .boton-contacto-central {
   display: inline-block;
-  padding: 1em 2.5em;
+  padding: 0.8em 1.5em;
   background: linear-gradient(45deg, #08b6fd, #00d4ff);
   color: #000;
   text-decoration: none;
-  border-radius: 2em;
+  border-radius: 1em;
   box-shadow: 0px 12px 30px rgba(8, 184, 253, 0.4);
   font-size: 1.5em;
   font-weight: 700;
