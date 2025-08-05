@@ -979,8 +979,8 @@ footer {
 /* Estilos para la sección de portada */
 .m-i-seccion-portada {
   position: relative;
-  width: 96%;
-  height: calc(96vw * 0.4);
+  width: 98%;
+  height: calc(98vw * 0.4);
   margin: 120px auto 50px auto;
   display: flex;
   align-items: center;
@@ -1015,13 +1015,13 @@ footer {
   border-radius: 20px;
   color: white;
   text-align: center;
-  max-width: min(700px, 80vw);
+  max-width: min(900px, 90vw);
 }
 
 .m-i-texto-portada h1 {
   color: #08b6fd;
   margin-bottom: clamp(15px, 2vw, 30px);
-  font-size: clamp(2em, 5vw, 3em);
+  font-size: clamp(2.2em, 5.5vw, 3.5em);
   font-weight: 700;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
@@ -1037,7 +1037,7 @@ footer {
 .m-i-texto-portada p {
   color: white;
   margin: 0;
-  font-size: clamp(1em, 2.5vw, 1.4em);
+  font-size: clamp(1.2em, 3vw, 1.8em);
   line-height: 1.6;
   font-weight: 500;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
@@ -1079,15 +1079,15 @@ footer {
 
 @media (min-width: 1920px) {
   .m-i-texto-portada h1 {
-    font-size: 3.5em;
+    font-size: 4.5em;
   }
 
   .m-i-texto-portada h2 {
-    font-size: 3em;
+    font-size: 3.8em;
   }
 
   .m-i-texto-portada p {
-    font-size: 1.6em;
+    font-size: 2em;
   }
 
   .m-i-texto-contenido h2 {
@@ -1096,6 +1096,28 @@ footer {
 
   .m-i-texto-contenido p {
     font-size: 1.4em;
+  }
+}
+
+@media (min-width: 2560px) {
+  .m-i-texto-portada h1 {
+    font-size: 5.5em;
+  }
+
+  .m-i-texto-portada h2 {
+    font-size: 4.5em;
+  }
+
+  .m-i-texto-portada p {
+    font-size: 2.4em;
+  }
+
+  .m-i-texto-contenido h2 {
+    font-size: 3em;
+  }
+
+  .m-i-texto-contenido p {
+    font-size: 1.6em;
   }
 }
 
