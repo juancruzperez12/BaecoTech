@@ -389,6 +389,20 @@ html {
   color: #08b6fd;
 }
 
+.proyecto-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.proyecto-link:hover {
+  color: #00d4ff;
+}
+
+.subrayado-celeste {
+  /* Subrayado removido */
+}
+
 .m-i-imagen-texto-contenido img {
   max-width: 100%;
   height: auto;
