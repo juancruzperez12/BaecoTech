@@ -17,6 +17,8 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
+    <!-- reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
     <nav class="navbar">
@@ -72,6 +74,15 @@
         placeholder="Escribí tu mensaje..."
         required
       ></textarea>
+
+      <!-- reCAPTCHA -->
+      <div class="recaptcha-container">
+        <div
+          class="g-recaptcha"
+          data-sitekey="6LfMaK8rAAAAANAwQQE9lykWd5sXlc914Te8lffD"
+        ></div>
+      </div>
+
       <button type="submit" class="submit-form">Enviar Mensaje</button>
     </form>
 
