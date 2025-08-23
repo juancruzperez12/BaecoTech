@@ -12,6 +12,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <!-- EmailJS CDN -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
   </head>
   <body>
     <nav class="navbar">
@@ -54,17 +59,30 @@
       <div class="divisor-redes"></div>
     </div>
 
-    <form action="" class="contact-form">
+    <form id="contactForm" class="contact-form">
       <h1 class="title-form">Contacto</h1>
-      <input type="text" class="input-form" required />
+      <input type="text" name="nombre" class="input-form" required />
       <label class="label-form">Nombre</label>
-      <input type="email" class="input-form" required />
+      <input type="email" name="email" class="input-form" required />
       <label class="label-form">Mail</label>
-      <input type="text" class="input-form" required />
+      <input type="text" name="asunto" class="input-form" required />
       <label class="label-form">Asunto</label>
-      <textarea placeholder="Escribí tu mensaje..."></textarea>
-      <input type="submit" class="submit-form" />
+      <textarea
+        name="mensaje"
+        placeholder="Escribí tu mensaje..."
+        required
+      ></textarea>
+      <button type="submit" class="submit-form">Enviar Mensaje</button>
     </form>
+
+    <!-- Mensaje de confirmación -->
+    <div id="successMessage" class="success-message" style="display: none">
+      <p>¡Mensaje enviado con éxito! Te responderemos pronto.</p>
+    </div>
+
+    <div id="errorMessage" class="error-message" style="display: none">
+      <p>Hubo un error al enviar el mensaje. Por favor, intenta nuevamente.</p>
+    </div>
     <div class="divisor-redes"></div>
 
     <footer>
@@ -101,6 +119,7 @@
 
   <script src="form.js"></script>
   <script src="burger.js"></script>
+  <script src="emailjs-config.js"></script>
   <style>
     body {
       font-family: "Poppins", sans-serif;
