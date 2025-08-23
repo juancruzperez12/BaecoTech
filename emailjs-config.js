@@ -167,7 +167,7 @@ function sendEmail(e) {
     // Campos que coinciden exactamente con tu plantilla de EmailJS
     name: nombre,
     title: asunto,
-    message: mensaje,
+    message: `Email: ${email}\n\nMensaje:\n${mensaje}`,
     email: email,
     time: new Date().toLocaleString("es-ES"), // Agregamos la hora actual
   };
