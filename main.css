@@ -993,7 +993,7 @@ footer {
 /* Estilos para la sección de portada */
 .m-i-seccion-portada {
   position: relative;
-  width: 98%;
+  width: 80%;
   height: calc(98vw * 0.4);
   margin: 120px auto 50px auto;
   display: flex;
