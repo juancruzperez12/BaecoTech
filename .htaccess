@@ -1,0 +1,14 @@
+RewriteEngine On
+
+# Redirigir URLs con .html a URLs sin .html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+# Redirigir URLs antiguas con .html a nuevas sin .html
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1? [NC,L,R=301]
+
+# Redirigir index.html a /
+RewriteCond %{THE_REQUEST} /index\.html [NC]
+RewriteRule ^ /? [NC,L,R=301]
