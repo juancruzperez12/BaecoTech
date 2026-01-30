@@ -1177,6 +1177,19 @@ footer {
   height: auto;
 }
 
+/* Limitar imágenes a 16:9 (solo donde se aplique la clase en el HTML, ej. Productos) */
+.m-i-seccion-contenido .m-i-imagen-texto-contenido.ratio-16x9 {
+  width: min(500px, 100%);
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.m-i-seccion-contenido .m-i-imagen-texto-contenido.ratio-16x9 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .img-vertical {
   display: none;
 }
