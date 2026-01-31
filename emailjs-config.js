@@ -71,22 +71,26 @@ function checkRateLimit() {
   return { allowed: true };
 }
 
-// Función para verificar reCAPTCHA
-function verifyRecaptcha() {
+// Función para verificar reCAPTCHA v3
+async function verifyRecaptcha() {
   if (typeof grecaptcha === "undefined") {
     return { verified: false, message: "reCAPTCHA no está disponible." };
   }
 
-  const response = grecaptcha.getResponse();
-  if (!response) {
-    return { verified: false, message: "Por favor completa el reCAPTCHA." };
+  try {
+    const token = await grecaptcha.execute("6LfMaK8rAAAAANAwQQE9IykWd5sXIc9I4Te8IffD", { action: "submit" });
+    if (!token) {
+      return { verified: false, message: "Error al verificar reCAPTCHA." };
+    }
+    return { verified: true, token: token };
+  } catch (error) {
+    console.error("Error en reCAPTCHA:", error);
+    return { verified: false, message: "Error al verificar reCAPTCHA." };
   }
-
-  return { verified: true, response: response };
 }
 
 // Función para enviar el formulario
-function sendEmail(e) {
+async function sendEmail(e) {
   e.preventDefault();
 
   // Verificar rate limiting
@@ -140,8 +144,8 @@ function sendEmail(e) {
     return;
   }
 
-  // Verificar reCAPTCHA
-  const recaptchaCheck = verifyRecaptcha();
+  // Verificar reCAPTCHA v3
+  const recaptchaCheck = await verifyRecaptcha();
   if (!recaptchaCheck.verified) {
     document.getElementById("errorMessage").style.display = "block";
     document.getElementById("errorMessage").querySelector("p").textContent =
@@ -190,11 +194,6 @@ function sendEmail(e) {
       // Limpiar formulario
       document.getElementById("contactForm").reset();
 
-      // Resetear reCAPTCHA
-      if (typeof grecaptcha !== "undefined") {
-        grecaptcha.reset();
-      }
-
       // Restaurar botón
       submitButton.textContent = originalText;
       submitButton.disabled = false;
@@ -209,11 +208,6 @@ function sendEmail(e) {
 
       // Mostrar mensaje de error
       document.getElementById("errorMessage").style.display = "block";
-
-      // Resetear reCAPTCHA
-      if (typeof grecaptcha !== "undefined") {
-        grecaptcha.reset();
-      }
 
       // Restaurar botón
       submitButton.textContent = originalText;
