@@ -232,4 +232,15 @@ document.addEventListener("DOMContentLoaded", function () {
   if (contactForm) {
     contactForm.addEventListener("submit", sendEmail);
   }
+  
+  // Verificar si reCAPTCHA se carga correctamente
+  window.addEventListener("load", function() {
+    setTimeout(function() {
+      if (typeof grecaptcha === "undefined") {
+        console.error("reCAPTCHA no se cargó. Verifica que el dominio esté autorizado en Google reCAPTCHA Admin.");
+      } else {
+        console.log("reCAPTCHA cargado correctamente");
+      }
+    }, 2000);
+  });
 });
