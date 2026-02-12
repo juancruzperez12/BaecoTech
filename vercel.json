@@ -15,6 +15,10 @@
     {
       "source": "/contacto",
       "destination": "/contacto.html"
+    },
+    {
+      "source": "/pedidos",
+      "destination": "/pedidosLanding.html"
     }
   ],
   "redirects": [
@@ -36,6 +40,11 @@
     {
       "source": "/contacto.html",
       "destination": "/contacto",
+      "permanent": true
+    },
+    {
+      "source": "/pedidosLanding.html",
+      "destination": "/pedidos",
       "permanent": true
     }
   ]
