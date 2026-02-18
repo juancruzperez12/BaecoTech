@@ -51,7 +51,9 @@ grizón: #272727
 
 #intro-logo {
   width: 200px;
-  animation: heartbeat 1.5s ease-in-out infinite, fadeOut 1s forwards 3s;
+  animation:
+    heartbeat 1.5s ease-in-out infinite,
+    fadeOut 1s forwards 3s;
 }
 
 @keyframes heartbeat {
@@ -400,7 +402,20 @@ html {
 }
 
 .subrayado-celeste {
-  /* Subrayado removido */
+  position: relative;
+  display: inline-block;
+}
+
+.subrayado-celeste::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.15em;
+  width: 100%;
+  height: 2px;
+  background: #08b6fd;
+  border-radius: 999px;
+  box-shadow: 0 0 3px rgba(8, 184, 253, 0.3);
 }
 
 .m-i-imagen-texto-contenido img {
@@ -508,7 +523,9 @@ html {
   margin-top: 30px;
   margin-bottom: 100px;
   padding: 20px;
-  box-shadow: 0 15px 30px rgba(8, 184, 253, 0.2), 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow:
+    0 15px 30px rgba(8, 184, 253, 0.2),
+    0 8px 16px rgba(0, 0, 0, 0.3);
   position: relative;
   font-family: "Poppins", sans-serif;
   border: 2px solid rgba(8, 184, 253, 0.4);
@@ -622,7 +639,9 @@ textarea::placeholder {
   flex-direction: column;
   border-radius: 2em;
   border: 1px solid rgba(8, 184, 253, 0.3);
-  box-shadow: 0 15px 30px rgba(8, 184, 253, 0.2), 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow:
+    0 15px 30px rgba(8, 184, 253, 0.2),
+    0 8px 16px rgba(0, 0, 0, 0.3);
   color: #dff8eb;
   margin: 2.5em;
   position: relative;
@@ -633,6 +652,23 @@ textarea::placeholder {
   text-align: center;
   margin: 0.2em;
   color: #00d4ff;
+}
+
+.precio-actual {
+  color: #08b6fd;
+  text-shadow:
+    0 0 3px rgba(8, 184, 253, 0.4),
+    0 0 6px rgba(8, 184, 253, 0.25);
+  letter-spacing: 0.02em;
+  font-size: 2.7em;
+}
+
+.precio-anterior {
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #c9d1d9;
+  text-decoration: line-through;
 }
 
 .caja ul {
@@ -831,7 +867,10 @@ textarea::placeholder {
   font-weight: 700;
   text-align: center;
   border: 2px solid rgba(8, 184, 253, 0.3);
-  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  transition:
+    background 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.2s ease;
 }
 
 .boton-contacto-central:hover {
@@ -1174,8 +1213,11 @@ footer {
 .m-i-seccion-contenido .m-i-imagen-texto-contenido {
   border-radius: 14px;
   border: none;
-  box-shadow: 0 20px 40px rgba(8, 184, 253, 0.3), 0 10px 20px rgba(0, 0, 0, 0.2),
-    0 5px 10px rgba(0, 0, 0, 0.1), inset 0 0 0 2px rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 20px 40px rgba(8, 184, 253, 0.3),
+    0 10px 20px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.1),
+    inset 0 0 0 2px rgba(255, 255, 255, 0.1);
   transform: translateY(-20px) rotateX(8deg) scale(1.03);
   transition: all 0.4s ease;
   perspective: 1000px;
@@ -1183,8 +1225,11 @@ footer {
 
 .m-i-seccion-contenido .m-i-imagen-texto-contenido:hover {
   transform: translateY(-30px) rotateX(12deg) scale(1.06);
-  box-shadow: 0 30px 60px rgba(8, 184, 253, 0.4), 0 15px 30px rgba(0, 0, 0, 0.3),
-    0 8px 16px rgba(0, 0, 0, 0.2), inset 0 0 0 3px rgba(255, 255, 255, 0.15);
+  box-shadow:
+    0 30px 60px rgba(8, 184, 253, 0.4),
+    0 15px 30px rgba(0, 0, 0, 0.3),
+    0 8px 16px rgba(0, 0, 0, 0.2),
+    inset 0 0 0 3px rgba(255, 255, 255, 0.15);
 }
 
 .m-i-seccion-contenido .m-i-imagen-texto-contenido img {
