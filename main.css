@@ -108,7 +108,7 @@ grizón: #272727
   display: flex;
   color: #fff;
   float: right;
-  font-weight: 500;
+  font-weight: 600;
   font-size: large;
   border: solid 2px #000;
   border-top: none;
@@ -134,7 +134,7 @@ grizón: #272727
   border: 1px solid rgba(8, 184, 253, 0.3);
   border-radius: 0.6em;
   font-size: large;
-  font-weight: 600;
+  font-weight: 400;
   text-decoration: none;
   box-shadow: 0px 4px 12px rgba(8, 184, 253, 0.3);
 }
@@ -381,7 +381,7 @@ html {
   flex: 1;
   color: #c0c0c0;
   font-size: large;
-  font-weight: 600;
+  font-weight: 400;
   text-decoration: none;
   text-align: left;
   max-width: 500px;
@@ -538,7 +538,7 @@ html {
   margin-bottom: 2em;
   color: #00d4ff;
   font-size: 1.8em;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .input-form,
@@ -604,7 +604,7 @@ textarea::placeholder {
   font-family: "Poppins", sans-serif;
   border-radius: 1em;
   font-size: 1.2em;
-  font-weight: 600;
+  font-weight: 400;
   box-shadow: 0px 8px 20px rgba(8, 184, 253, 0.3);
   transition: all 0.3s ease;
 }
@@ -666,7 +666,7 @@ textarea::placeholder {
 .precio-anterior {
   margin: 0;
   font-size: 1.1em;
-  font-weight: 600;
+  font-weight: 400;
   color: #c9d1d9;
   text-decoration: line-through;
 }
@@ -686,7 +686,7 @@ textarea::placeholder {
 .caja ul li {
   margin: 1em 2.5em 1em 2.5em;
   font-size: large;
-  font-weight: 600;
+  font-weight: 400;
   text-decoration: none;
   text-align: left;
   padding-left: 0.5em;
@@ -708,7 +708,7 @@ textarea::placeholder {
   box-shadow: 0px 8px 20px rgba(8, 184, 253, 0.3);
   margin-top: auto;
   font-size: x-large;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 /*inicio de responsive movil de servicios*/
@@ -877,7 +877,7 @@ textarea::placeholder {
   border-radius: 1em;
   box-shadow: 0px 12px 30px rgba(8, 184, 253, 0.4);
   font-size: 1.5em;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
   border: 2px solid rgba(8, 184, 253, 0.3);
   transition:
@@ -912,7 +912,7 @@ textarea::placeholder {
 
 .titulo-de-contacto h1 {
   font-size: 2.5em;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 1em;
   color: #00d4ff;
 }
@@ -1105,7 +1105,7 @@ footer {
   color: #08b6fd;
   margin-bottom: clamp(15px, 2vw, 30px);
   font-size: clamp(2.2em, 5.5vw, 3.5em);
-  font-weight: 700;
+  font-weight: 600;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
@@ -1113,7 +1113,7 @@ footer {
   color: #08b6fd;
   margin-bottom: clamp(10px, 1.5vw, 25px);
   font-size: clamp(1.5em, 4vw, 2.5em);
-  font-weight: 700;
+  font-weight: 600;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
@@ -1122,7 +1122,7 @@ footer {
   margin: 0;
   font-size: clamp(1.2em, 3vw, 1.8em);
   line-height: 1.6;
-  font-weight: 500;
+  font-weight: 600;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
@@ -1136,7 +1136,7 @@ footer {
   color: #08b6fd;
   margin-bottom: clamp(10px, 1.5vw, 20px);
   font-size: clamp(1.3em, 3.5vw, 2.2em);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .m-i-texto-contenido p {
@@ -1144,7 +1144,7 @@ footer {
   margin: 0;
   font-size: clamp(0.9em, 2.2vw, 1.2em);
   line-height: 1.6;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* Media queries para ajustes específicos */
@@ -1320,7 +1320,7 @@ footer {
 .success-message p,
 .error-message p {
   margin: 0;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 16px;
 }
 
