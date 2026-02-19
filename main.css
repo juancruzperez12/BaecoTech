@@ -2,12 +2,21 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Geist Variable";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("https://cdn.jsdelivr.net/fontsource/fonts/geist:vf@latest/latin-wght-normal.woff2")
+    format("woff2-variations");
+}
+
 html,
 body {
   max-width: 100% !important;
   overflow-x: hidden !important;
-  font-family: "Poppins", sans-serif;
-  font-optical-sizing: auto;
+  font-family: "Geist Variable", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
