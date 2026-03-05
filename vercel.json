@@ -5,16 +5,16 @@
     { "source": "/productos", "destination": "/productos.html" },
     { "source": "/contacto", "destination": "/contacto.html" },
     { "source": "/pedidos", "destination": "/pedidos.html" },
-    { "source": "/pedidos-landing", "destination": "/pedidosLanding.html" },
-    { "source": "/turno-software", "destination": "/turno-software.html" }
+    { "source": "/pedidos-landing", "destination": "/pedidosLanding.html" }
   ],
   "redirects": [
+    { "source": "/turno-software", "destination": "https://turnosoftware.app/", "permanent": true },
+    { "source": "/turno-software.html", "destination": "https://turnosoftware.app/", "permanent": true },
     { "source": "/index.html", "destination": "/", "permanent": true },
     { "source": "/servicios.html", "destination": "/servicios", "permanent": true },
     { "source": "/productos.html", "destination": "/productos", "permanent": true },
     { "source": "/contacto.html", "destination": "/contacto", "permanent": true },
     { "source": "/pedidos.html", "destination": "/pedidos", "permanent": true },
-    { "source": "/pedidosLanding.html", "destination": "/pedidos-landing", "permanent": true },
-    { "source": "/turno-software.html", "destination": "/turno-software", "permanent": true }
+    { "source": "/pedidosLanding.html", "destination": "/pedidos-landing", "permanent": true }
   ]
 }
