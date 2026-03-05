@@ -5,7 +5,8 @@
     { "source": "/productos", "destination": "/productos.html" },
     { "source": "/contacto", "destination": "/contacto.html" },
     { "source": "/pedidos", "destination": "/pedidos.html" },
-    { "source": "/pedidos-landing", "destination": "/pedidosLanding.html" }
+    { "source": "/pedidos-landing", "destination": "/pedidosLanding.html" },
+    { "source": "/turno-software", "destination": "/turno-software.html" }
   ],
   "redirects": [
     { "source": "/index.html", "destination": "/", "permanent": true },
@@ -13,6 +14,7 @@
     { "source": "/productos.html", "destination": "/productos", "permanent": true },
     { "source": "/contacto.html", "destination": "/contacto", "permanent": true },
     { "source": "/pedidos.html", "destination": "/pedidos", "permanent": true },
-    { "source": "/pedidosLanding.html", "destination": "/pedidos-landing", "permanent": true }
+    { "source": "/pedidosLanding.html", "destination": "/pedidos-landing", "permanent": true },
+    { "source": "/turno-software.html", "destination": "/turno-software", "permanent": true }
   ]
 }

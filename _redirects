@@ -3,9 +3,11 @@
 /servicios.html /servicios 301
 /productos.html /productos 301
 /contacto.html /contacto 301
+/turno-software.html /turno-software 301
 
 # Reescritura de URLs
 /* /index.html 200
 /servicios /servicios.html 200
 /productos /productos.html 200
 /contacto /contacto.html 200
+/turno-software /turno-software.html 200
