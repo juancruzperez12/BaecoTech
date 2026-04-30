@@ -21,6 +21,11 @@ body {
   font-style: normal;
 }
 
+h1,
+h2 {
+  font-weight: 400 !important;
+}
+
 body {
   background-color: #121212;
   margin: 0;
