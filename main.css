@@ -139,24 +139,29 @@ grizón: #272727
 
 .navlist-contacto {
   text-align: center;
-  padding: 0.5em 1em;
-  margin: auto 1em;
-  display: inline;
+  align-items: center;
+  padding: 1em 1em;
+  margin: 1em;
+  display: flex;
   float: right;
-  color: #000;
-  background: linear-gradient(45deg, #08b6fd, #00d4ff);
-  border: 1px solid rgba(8, 184, 253, 0.3);
-  border-radius: 0.6em;
+  color: #08b6fd;
+  background: none;
+  border: solid 2px #000;
+  border-top: none;
+  border-bottom: none;
   font-size: 1.2184em;
   font-weight: 331;
   text-decoration: none;
-  box-shadow: 0px 4px 12px rgba(8, 184, 253, 0.3);
 }
 
 .navlist-contacto:hover {
-  color: #000;
-  background: linear-gradient(45deg, #00d4ff, #08b6fd);
-  box-shadow: 0px 6px 16px rgba(8, 184, 253, 0.4);
+  color: #08b6fd;
+  text-shadow:
+    0 0 2px rgba(255, 255, 255, 0.55),
+    0 0 5px rgba(255, 255, 255, 0.35);
+  border: solid 2px #000;
+  border-top: none;
+  border-bottom: none;
 }
 
 .nav-item {
@@ -229,13 +234,14 @@ grizón: #272727
     display: inline-block;
     width: auto;
     text-align: center;
-    margin: 0;
+    margin: auto 1em;
     padding: 10px 20px;
-    background-color: #08b6fd;
-    color: #000;
+    background: none;
+    color: #08b6fd;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    border-radius: 0;
+    border: none;
+    transition: color 0.3s ease;
   }
 
   .logotipo {
