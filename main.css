@@ -1129,7 +1129,7 @@ footer {
   color: #08b6fd;
   margin-bottom: clamp(15px, 2vw, 30px);
   font-size: clamp(2.2784em, 5.6959vw, 3.6248em);
-  font-weight: 300;
+  font-weight: 700 !important;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
