@@ -21,9 +21,12 @@ body {
   font-style: normal;
 }
 
-h1,
-h2 {
+h1 {
   font-weight: 400 !important;
+}
+
+h2 {
+  font-weight: 460 !important;
 }
 
 body {
