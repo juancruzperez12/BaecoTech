@@ -17,12 +17,12 @@ body {
   overflow-x: hidden !important;
   font-family: "Geist Variable", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
 }
 
 body {
-  background-color: #000;
+  background-color: #121212;
   margin: 0;
 }
 /*
@@ -117,7 +117,7 @@ grizón: #272727
   display: flex;
   color: #fff;
   float: right;
-  font-weight: 600;
+  font-weight: 450;
   font-size: large;
   border: solid 2px #000;
   border-top: none;
@@ -143,7 +143,7 @@ grizón: #272727
   border: 1px solid rgba(8, 184, 253, 0.3);
   border-radius: 0.6em;
   font-size: large;
-  font-weight: 600;
+  font-weight: 450;
   text-decoration: none;
   box-shadow: 0px 4px 12px rgba(8, 184, 253, 0.3);
 }
@@ -161,7 +161,7 @@ grizón: #272727
 
 .hamburger-menu {
   display: none;
-  font-size: 30px;
+  font-size: 22.5px;
   cursor: pointer;
   color: white;
 }
@@ -300,6 +300,7 @@ grizón: #272727
 }
 
 html {
+  font-size: 75%;
   scrollbar-width: thin;
   scrollbar-color: #555 #1a1a1a;
 }
@@ -390,7 +391,7 @@ html {
   flex: 1;
   color: #c0c0c0;
   font-size: large;
-  font-weight: 400;
+  font-weight: 300;
   text-decoration: none;
   text-align: left;
   max-width: 500px;
@@ -547,7 +548,7 @@ html {
   margin-bottom: 2em;
   color: #00d4ff;
   font-size: 1.8em;
-  font-weight: 600;
+  font-weight: 450;
 }
 
 .input-form,
@@ -613,7 +614,7 @@ textarea::placeholder {
   font-family: "Poppins", sans-serif;
   border-radius: 1em;
   font-size: 1.2em;
-  font-weight: 400;
+  font-weight: 300;
   box-shadow: 0px 8px 20px rgba(8, 184, 253, 0.3);
   transition: all 0.3s ease;
 }
@@ -675,7 +676,7 @@ textarea::placeholder {
 .precio-anterior {
   margin: 0;
   font-size: 1.1em;
-  font-weight: 400;
+  font-weight: 300;
   color: #c9d1d9;
   text-decoration: line-through;
 }
@@ -695,7 +696,7 @@ textarea::placeholder {
 .caja ul li {
   margin: 1em 2.5em 1em 2.5em;
   font-size: large;
-  font-weight: 400;
+  font-weight: 300;
   text-decoration: none;
   text-align: left;
   padding-left: 0.5em;
@@ -704,7 +705,7 @@ textarea::placeholder {
 .caja ul li a {
   color: #dff8eb;
   text-decoration: underline;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .boton-contacto {
@@ -717,7 +718,7 @@ textarea::placeholder {
   box-shadow: 0px 8px 20px rgba(8, 184, 253, 0.3);
   margin-top: auto;
   font-size: x-large;
-  font-weight: 600;
+  font-weight: 450;
 }
 
 /*inicio de responsive movil de servicios*/
@@ -886,7 +887,7 @@ textarea::placeholder {
   border-radius: 1em;
   box-shadow: 0px 12px 30px rgba(8, 184, 253, 0.4);
   font-size: 1.5em;
-  font-weight: 600;
+  font-weight: 450;
   text-align: center;
   border: 2px solid rgba(8, 184, 253, 0.3);
   transition:
@@ -921,7 +922,7 @@ textarea::placeholder {
 
 .titulo-de-contacto h1 {
   font-size: 2.5em;
-  font-weight: 600;
+  font-weight: 450;
   margin-bottom: 1em;
   color: #00d4ff;
 }
@@ -996,7 +997,7 @@ footer {
 
 .footer-link {
   color: #cdcdcd;
-  font-weight: 400;
+  font-weight: 300;
   font-size: medium;
   text-decoration: none;
   margin-bottom: 10px;
@@ -1010,7 +1011,7 @@ footer {
 .derechos {
   color: #cdcdcd;
   font-size: medium;
-  font-weight: 400;
+  font-weight: 300;
   text-align: center;
   margin-top: 0;
 }
@@ -1112,7 +1113,7 @@ footer {
   color: #08b6fd;
   margin-bottom: clamp(15px, 2vw, 30px);
   font-size: clamp(2.2em, 5.5vw, 3.5em);
-  font-weight: 600;
+  font-weight: 450;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
@@ -1120,7 +1121,7 @@ footer {
   color: #08b6fd;
   margin-bottom: clamp(10px, 1.5vw, 25px);
   font-size: clamp(1.5em, 4vw, 2.5em);
-  font-weight: 600;
+  font-weight: 450;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
@@ -1129,7 +1130,7 @@ footer {
   margin: 0;
   font-size: clamp(1.2em, 3vw, 1.8em);
   line-height: 1.6;
-  font-weight: 600;
+  font-weight: 450;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
@@ -1143,7 +1144,7 @@ footer {
   color: #08b6fd;
   margin-bottom: clamp(10px, 1.5vw, 20px);
   font-size: clamp(1.3em, 3.5vw, 2.2em);
-  font-weight: 600;
+  font-weight: 450;
 }
 
 .m-i-texto-contenido p {
@@ -1151,7 +1152,7 @@ footer {
   margin: 0;
   font-size: clamp(0.9em, 2.2vw, 1.2em);
   line-height: 1.6;
-  font-weight: 600;
+  font-weight: 450;
 }
 
 /* Media queries para ajustes específicos */
@@ -1327,8 +1328,8 @@ footer {
 .success-message p,
 .error-message p {
   margin: 0;
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: 550;
+  font-size: 12px;
 }
 
 /* Estilos para el botón de envío cuando está deshabilitado */
