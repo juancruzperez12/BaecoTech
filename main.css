@@ -319,6 +319,10 @@ html {
   position: relative;
 }
 
+.pagina-productos .m-i-seccion-contenido:first-of-type {
+  margin-top: 7rem;
+}
+
 /* Estilos específicos para la primera sección con imagen */
 .m-i-seccion-contenido:first-of-type + .m-i-seccion-contenido {
   position: relative;
