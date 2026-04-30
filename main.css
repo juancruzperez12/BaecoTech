@@ -399,7 +399,7 @@ html {
 .m-i-texto-contenido {
   flex: 1;
   color: #c0c0c0;
-  font-size: 0.9376em;
+  font-size: 0.8907em;
   font-weight: 200;
   text-decoration: none;
   text-align: left;
@@ -1172,7 +1172,7 @@ footer {
   }
 
   .m-i-texto-contenido {
-    font-size: 1.5525em;
+    font-size: 1.4749em;
     padding: 20px;
     max-width: 95vw;
   }
