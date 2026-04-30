@@ -148,7 +148,7 @@ grizón: #272727
   border: 1px solid rgba(8, 184, 253, 0.3);
   border-radius: 0.6em;
   font-size: 1.2184em;
-  font-weight: 288;
+  font-weight: 331;
   text-decoration: none;
   box-shadow: 0px 4px 12px rgba(8, 184, 253, 0.3);
 }
@@ -668,6 +668,7 @@ textarea::placeholder {
 
 .caja h1 {
   font-size: 2.166em;
+  font-weight:600;
   text-align: center;
   margin: 0.2em;
   color: #08b6fd;
@@ -679,7 +680,7 @@ textarea::placeholder {
     0 0 3px rgba(8, 184, 253, 0.4),
     0 0 6px rgba(8, 184, 253, 0.25);
   letter-spacing: 0.02em;
-  font-size: 4.332em;
+  font-size: 5.832em;
 }
 
 .precio-anterior {
