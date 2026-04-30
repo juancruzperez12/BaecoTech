@@ -677,10 +677,15 @@ textarea::placeholder {
 
 .caja h1 {
   font-size: 2.166em;
-  font-weight:600;
+  font-weight: 900;
   text-align: center;
   margin: 0.2em;
   color: #08b6fd;
+}
+
+.caja .titulo-plan {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800 !important;
 }
 
 .precio-actual {
