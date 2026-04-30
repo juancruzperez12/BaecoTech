@@ -133,6 +133,23 @@ grizón: #272727
   text-decoration: none;
 }
 
+.navlist,
+.navlist-contacto {
+  position: relative;
+}
+
+.navlist.active::after,
+.navlist-contacto.active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0.45em;
+  width: 60%;
+  height: 2px;
+  background-color: #08b6fd;
+  transform: translateX(-50%);
+}
+
 .navlist:hover {
   color: #c9d1d9;
   border: solid 2px #000;
