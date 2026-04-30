@@ -1116,25 +1116,25 @@ footer {
 .m-i-texto-portada h1 {
   color: #08b6fd;
   margin-bottom: clamp(15px, 2vw, 30px);
-  font-size: clamp(2.0252em, 5.063vw, 3.222em);
-  font-weight: 250;
+  font-size: clamp(2.2784em, 5.6959vw, 3.6248em);
+  font-weight: 300;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .m-i-texto-portada h2 {
   color: #08b6fd;
   margin-bottom: clamp(10px, 1.5vw, 25px);
-  font-size: clamp(1.3807em, 3.6821vw, 2.3012em);
-  font-weight: 250;
+  font-size: clamp(1.5533em, 4.1423vw, 2.5889em);
+  font-weight: 300;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .m-i-texto-portada p {
   color: white;
   margin: 0;
-  font-size: clamp(1.1046em, 2.7617vw, 1.657em);
+  font-size: clamp(1.2427em, 3.1069vw, 1.8642em);
   line-height: 1.6;
-  font-weight: 250;
+  font-weight: 300;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
@@ -1175,15 +1175,15 @@ footer {
 
 @media (min-width: 1920px) {
   .m-i-texto-portada h1 {
-    font-size: 4.8736em;
+    font-size: 5.4828em;
   }
 
   .m-i-texto-portada h2 {
-    font-size: 4.1155em;
+    font-size: 4.63em;
   }
 
   .m-i-texto-portada p {
-    font-size: 2.166em;
+    font-size: 2.4368em;
   }
 
   .m-i-texto-contenido h2 {
@@ -1197,15 +1197,15 @@ footer {
 
 @media (min-width: 2560px) {
   .m-i-texto-portada h1 {
-    font-size: 5.9564em;
+    font-size: 6.701em;
   }
 
   .m-i-texto-portada h2 {
-    font-size: 4.8736em;
+    font-size: 5.4828em;
   }
 
   .m-i-texto-portada p {
-    font-size: 2.5992em;
+    font-size: 2.9241em;
   }
 
   .m-i-texto-contenido h2 {
