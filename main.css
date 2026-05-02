@@ -1595,9 +1595,6 @@ footer {
   font-size: clamp(2.2784em, 5.6959vw, 3.6248em);
   margin: 0.65rem 0 0.75rem;
   line-height: 1.12;
-  text-shadow:
-    2px 2px 4px rgba(0, 0, 0, 0.8),
-    0 0 40px rgba(8, 184, 253, 0.3);
 }
 
 .servicios-hub-intro p {
@@ -1650,7 +1647,6 @@ footer {
   font-weight: 600;
   margin: 0 0 0.65rem;
   line-height: 1.2;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.65);
 }
 
 .servicio-hub-card p {
@@ -1694,16 +1690,35 @@ footer {
 
 /* Página de un segmento */
 .pagina-servicio-segmento .servicio-segmento-main {
-  max-width: 920px;
+  max-width: 1040px;
   margin: 0 auto;
   padding: 9.5rem 1.5rem 4rem;
   text-align: left;
 }
 
 .servicio-segmento-hero {
-  text-align: center;
-  max-width: min(960px, 94vw);
-  margin: 0 auto 0.5rem;
+  text-align: left;
+  max-width: min(1100px, 96vw);
+  margin: 0 auto 0.75rem;
+  width: 100%;
+}
+
+/* Fila hero: H1 a la izquierda, descripción a la derecha */
+.servicio-segmento-hero-row {
+  display: grid;
+  grid-template-columns: minmax(min(100%, 300px), 1fr) minmax(min(100%, 280px), 1.15fr);
+  gap: 0.75rem 2.25rem;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .servicio-segmento-hero-row {
+    grid-template-columns: 1fr;
+  }
+
+  .servicio-segmento-main .servicio-segmento-hero-row h1 {
+    margin-bottom: 0.4rem;
+  }
 }
 
 /* Título principal: misma lógica tipográfica que .m-i-texto-portada h1 */
@@ -1713,17 +1728,20 @@ footer {
   font-size: clamp(2.2784em, 5.6959vw, 3.6248em);
   margin: 0.5rem 0 1rem;
   line-height: 1.12;
-  text-shadow:
-    2px 2px 4px rgba(0, 0, 0, 0.8),
-    0 0 42px rgba(8, 184, 253, 0.35);
+}
+
+.servicio-segmento-main .servicio-segmento-hero-row h1 {
+  margin: 0;
+  text-align: left;
 }
 
 .servicio-segmento-desc {
   color: #fff;
-  font-size: clamp(1.2427em, 3.1069vw, 1.8642em);
+  font-size: clamp(0.78rem, 1.35vw, 0.95rem);
   font-weight: 300;
-  line-height: 1.6;
-  margin: 0 0 1.5rem;
+  line-height: 1.55;
+  margin: 0.2rem 0 0;
+  text-align: left;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
@@ -1743,7 +1761,6 @@ footer {
   padding-bottom: 0.55rem;
   border-bottom: 1px solid rgba(8, 184, 253, 0.35);
   letter-spacing: 0.02em;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .servicio-contenido-extendido .servicio-h2-destacado:first-of-type {
@@ -1845,7 +1862,6 @@ footer {
   color: #08b6fd;
   font-weight: 700;
   font-size: 1.05em;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
 }
 
 @media (min-width: 1920px) {
