@@ -1780,22 +1780,60 @@ footer {
   margin: 0.5rem 0 1rem;
 }
 
-.servicio-ventajas-list {
-  margin: 0.35rem 0 1.1rem;
-  padding-left: 1.35rem;
-  list-style: disc;
-  color: #fff;
+.servicio-ventajas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin: 0.35rem 0 1.35rem;
+  align-items: stretch;
 }
 
-.servicio-ventajas-list li {
-  margin: 0.7rem 0;
-  padding-left: 0.25rem;
+.servicio-ventaja-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.85rem 1rem;
+  background: linear-gradient(135deg, #0a2942 0%, #0d3a5a 50%, #0a2942 100%);
+  border: 1px solid rgba(8, 184, 253, 0.3);
+  border-radius: 1.15rem;
+  padding: 1.25rem 1.15rem;
+  box-shadow:
+    0 10px 24px rgba(8, 184, 253, 0.12),
+    0 6px 16px rgba(0, 0, 0, 0.35);
+  text-align: left;
+  min-height: 100%;
+}
+
+.servicio-ventaja-titulo {
+  color: #08b6fd;
+  /* +15% respecto a clamp(0.78rem, 1.35vw, 0.92rem) */
+  font-size: clamp(0.897rem, 1.5525vw, 1.058rem);
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  flex: 0 1 34%;
+  min-width: 0;
+}
+
+.servicio-ventaja-desc {
+  color: #fff;
+  font-size: clamp(0.82rem, 1.45vw, 0.98rem);
+  font-weight: 300;
   line-height: 1.55;
+  margin: 0;
+  flex: 1 1 0;
+  min-width: 0;
 }
 
-.servicio-ventajas-list li strong {
-  color: #fff;
-  font-weight: 650;
+@media (max-width: 900px) {
+  .servicio-ventajas-grid {
+    grid-template-columns: 1fr;
+    max-width: 28rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .servicio-tabla-wrap {
