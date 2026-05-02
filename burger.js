@@ -1,6 +1,11 @@
-document
-  .getElementById("hamburger-menu")
-  .addEventListener("click", function () {
+(function () {
+  var menu = document.getElementById("hamburger-menu");
+  if (!menu) return;
+  menu.addEventListener("click", function () {
     var nav = document.querySelector(".top-nav");
-    nav.classList.toggle("show");
+    if (nav) nav.classList.toggle("show");
+    document.querySelectorAll(".nav-dropdown--mobile-open").forEach(function (el) {
+      el.classList.remove("nav-dropdown--mobile-open");
+    });
   });
+})();

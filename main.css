@@ -1399,3 +1399,319 @@ footer {
     transform: scale(0.8);
   }
 }
+
+/* —— Nav: Servicios (dropdown) + páginas de segmentos —— */
+.nav-dropdown {
+  position: relative;
+  list-style: none;
+}
+
+.nav-dropdown-trigger {
+  cursor: pointer;
+  gap: 0.35em;
+}
+
+.nav-dropdown-caret {
+  display: inline-block;
+  font-size: 0.65em;
+  opacity: 0.85;
+  transform: translateY(-0.05em);
+}
+
+.nav-dropdown-panel {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-dropdown-link {
+  display: block;
+  padding: 0.65em 1.1em;
+  color: #e8f4fc;
+  text-decoration: none;
+  font-size: 0.95em;
+  font-weight: 280;
+  border-left: 3px solid transparent;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.nav-dropdown-link:hover,
+.nav-dropdown-link:focus-visible {
+  background: rgba(8, 182, 253, 0.12);
+  color: #08b6fd;
+  border-left-color: #08b6fd;
+  outline: none;
+}
+
+.nav-dropdown-link.active {
+  color: #08b6fd;
+  background: rgba(8, 182, 253, 0.1);
+  border-left-color: #08b6fd;
+}
+
+@media (min-width: 768px) {
+  .nav-dropdown .navlist.nav-dropdown-trigger {
+    float: none;
+  }
+
+  .nav-dropdown-panel {
+    position: absolute;
+    top: calc(100% - 0.25em);
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 300px;
+    background: linear-gradient(160deg, #0a1f2e 0%, #0d1520 100%);
+    border: 1px solid rgba(8, 184, 253, 0.35);
+    border-radius: 14px;
+    padding: 0.4rem 0;
+    box-shadow:
+      0 18px 48px rgba(0, 0, 0, 0.55),
+      0 0 1px rgba(8, 184, 253, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition:
+      opacity 0.2s ease,
+      visibility 0.2s ease;
+    z-index: 1100;
+  }
+
+  .nav-dropdown:hover .nav-dropdown-panel,
+  .nav-dropdown:focus-within .nav-dropdown-panel {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .nav-dropdown-panel li {
+    list-style: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .top-nav.show {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding-top: 8px;
+    padding-bottom: 32px;
+  }
+
+  .nav-item.nav-dropdown {
+    flex-direction: column;
+    align-items: stretch;
+    margin: 8px 0;
+  }
+
+  .nav-dropdown .nav-dropdown-trigger {
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .nav-dropdown-panel {
+    display: none;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 4px;
+    padding: 4px 0 8px;
+    background: rgba(10, 41, 66, 0.45);
+    border-radius: 10px;
+    border: 1px solid rgba(8, 184, 253, 0.2);
+  }
+
+  .nav-dropdown.nav-dropdown--mobile-open .nav-dropdown-panel {
+    display: block;
+  }
+
+  .nav-dropdown-panel li {
+    list-style: none;
+    text-align: center;
+  }
+
+  .nav-dropdown-link {
+    text-align: center;
+    border-left: none;
+    border-bottom: 1px solid rgba(8, 184, 253, 0.12);
+  }
+
+  .nav-dropdown-link.active {
+    border-left: none;
+  }
+
+  .nav-dropdown-link:last-of-type {
+    border-bottom: none;
+  }
+}
+
+/* Hub Servicios + tarjetas */
+.pagina-servicios-hub .servicios-hub-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 7rem 1.5rem 4rem;
+}
+
+.servicios-hub-intro {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.servicios-hub-intro h1 {
+  color: #08b6fd;
+  font-weight: 400;
+  font-size: clamp(1.75rem, 4vw, 2.35rem);
+  margin: 0 0 0.75rem;
+}
+
+.servicios-hub-intro p {
+  color: #c9d1d9;
+  font-size: 1.05em;
+  font-weight: 280;
+  max-width: 36rem;
+  margin: 0 auto;
+  line-height: 1.55;
+}
+
+.servicios-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.servicio-hub-card {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #0a2942 0%, #0d3a5a 50%, #0a2942 100%);
+  border: 1px solid rgba(8, 184, 253, 0.3);
+  border-radius: 1.25rem;
+  padding: 1.5rem 1.35rem;
+  box-shadow:
+    0 12px 28px rgba(8, 184, 253, 0.15),
+    0 6px 14px rgba(0, 0, 0, 0.35);
+  text-decoration: none;
+  color: inherit;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.servicio-hub-card:hover,
+.servicio-hub-card:focus-visible {
+  transform: translateY(-3px);
+  border-color: rgba(8, 184, 253, 0.55);
+  box-shadow:
+    0 16px 36px rgba(8, 184, 253, 0.22),
+    0 8px 18px rgba(0, 0, 0, 0.4);
+  outline: none;
+}
+
+.servicio-hub-card h2 {
+  color: #08b6fd;
+  font-size: 1.25rem;
+  font-weight: 450;
+  margin: 0 0 0.65rem;
+}
+
+.servicio-hub-card p {
+  color: #c9d1d9;
+  font-size: 0.92em;
+  font-weight: 260;
+  line-height: 1.5;
+  margin: 0 0 1rem;
+  flex-grow: 1;
+}
+
+.servicio-hub-card .servicio-hub-ver {
+  color: #08b6fd;
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+.servicios-hub-archivo {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(8, 184, 253, 0.2);
+}
+
+.servicios-hub-archivo a {
+  color: #7a8a99;
+  font-size: 0.9em;
+  font-weight: 280;
+  text-decoration: underline;
+  text-decoration-color: rgba(8, 184, 253, 0.35);
+}
+
+.servicios-hub-archivo a:hover {
+  color: #c9d1d9;
+}
+
+/* Página de un segmento */
+.pagina-servicio-segmento .servicio-segmento-main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 7.5rem 1.5rem 4rem;
+  text-align: center;
+}
+
+.servicio-segmento-main h1 {
+  color: #08b6fd;
+  font-weight: 400;
+  font-size: clamp(1.6rem, 3.5vw, 2.1rem);
+  margin: 0 0 1rem;
+}
+
+.servicio-segmento-desc {
+  color: #c9d1d9;
+  font-size: 1.05em;
+  font-weight: 280;
+  line-height: 1.65;
+  margin: 0 0 2rem;
+}
+
+.servicio-segmento-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.servicio-segmento-actions a.boton-contacto-central {
+  margin: 0;
+}
+
+.servicio-segmento-volver {
+  color: #7a9aad;
+  text-decoration: none;
+  font-size: 0.95em;
+  font-weight: 280;
+}
+
+.servicio-segmento-volver:hover {
+  color: #08b6fd;
+}
+
+.legacy-archivo-banner {
+  max-width: 900px;
+  margin: 5.5rem auto 0;
+  padding: 0 1.25rem;
+}
+
+.legacy-archivo-banner p {
+  margin: 0;
+  padding: 0.85rem 1.1rem;
+  border-radius: 10px;
+  background: rgba(10, 41, 66, 0.55);
+  border: 1px solid rgba(8, 184, 253, 0.22);
+  color: #a8b8c4;
+  font-size: 0.92em;
+  text-align: center;
+  font-weight: 280;
+}

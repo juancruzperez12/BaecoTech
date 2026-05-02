@@ -23,8 +23,43 @@
         <li class="nav-item">
           <a href="/" class="navlist">Inicio</a>
         </li>
-        <li class="nav-item">
-          <a href="/servicios" class="navlist">Desarrollo Web</a>
+        <li class="nav-item nav-dropdown">
+          <a href="/servicios" class="navlist nav-dropdown-trigger"
+            >Servicios <span class="nav-dropdown-caret" aria-hidden="true">▾</span></a
+          >
+          <ul class="nav-dropdown-panel" role="menu">
+            <li role="none">
+              <a href="/servicios-landing-pages" class="nav-dropdown-link" role="menuitem"
+                >Landing Pages</a
+              >
+            </li>
+            <li role="none">
+              <a href="/servicios-sitios-web" class="nav-dropdown-link" role="menuitem">Sitios Webs</a>
+            </li>
+            <li role="none">
+              <a href="/servicios-web-apps" class="nav-dropdown-link" role="menuitem"
+                >Desarrollo de Web Apps</a
+              >
+            </li>
+            <li role="none">
+              <a href="/servicios-seo" class="nav-dropdown-link" role="menuitem">Posicionamiento SEO</a>
+            </li>
+            <li role="none">
+              <a href="/servicios-chatbots-ia" class="nav-dropdown-link" role="menuitem"
+                >ChatBots con IA</a
+              >
+            </li>
+            <li role="none">
+              <a href="/servicios-mantenimiento-web" class="nav-dropdown-link" role="menuitem"
+                >Mantenimiento de Sitios Web</a
+              >
+            </li>
+            <li role="none">
+              <a href="/servicios-ia-empresas" class="nav-dropdown-link" role="menuitem"
+                >Inteligencia Artificial para Empresas</a
+              >
+            </li>
+          </ul>
         </li>
         <li class="nav-item">
           <a href="/productos" class="navlist">Productos</a>
@@ -106,7 +141,7 @@
     <footer>
       <div class="contenedor-footer">
         <div class="lista-footer">
-          <a href="/servicios" class="footer-link">Desarrollo Web</a>
+          <a href="/servicios" class="footer-link">Servicios</a>
           <a href="/productos" class="footer-link">Productos</a>
           <a href="/contacto" class="footer-link">Contacto</a>
         </div>
@@ -142,4 +177,5 @@
     </footer>
   </body>
   <script src="burger.js"></script>
+  <script src="nav-dropdown.js"></script>
 </html>
