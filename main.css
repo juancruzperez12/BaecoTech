@@ -1594,6 +1594,7 @@ footer {
   font-weight: 400;
   font-size: clamp(1.75rem, 4vw, 2.35rem);
   margin: 0.65rem 0 0.75rem;
+  text-shadow: 0 0 32px rgba(8, 184, 253, 0.2);
 }
 
 .servicios-hub-intro p {
@@ -1686,17 +1687,25 @@ footer {
 
 /* Página de un segmento */
 .pagina-servicio-segmento .servicio-segmento-main {
-  max-width: 720px;
+  max-width: 920px;
   margin: 0 auto;
   padding: 9.5rem 1.5rem 4rem;
+  text-align: left;
+}
+
+.servicio-segmento-hero {
   text-align: center;
+  max-width: 720px;
+  margin: 0 auto 0.5rem;
 }
 
 .servicio-segmento-main h1 {
   color: #08b6fd;
   font-weight: 400;
-  font-size: clamp(1.6rem, 3.5vw, 2.1rem);
+  font-size: clamp(1.45rem, 3.2vw, 2.05rem);
   margin: 0.75rem 0 1rem;
+  line-height: 1.25;
+  text-shadow: 0 0 28px rgba(8, 184, 253, 0.22);
 }
 
 .servicio-segmento-desc {
@@ -1704,7 +1713,132 @@ footer {
   font-size: 1.22rem;
   font-weight: 280;
   line-height: 1.65;
-  margin: 0 0 2rem;
+  margin: 0 0 1.5rem;
+}
+
+/* Contenido extendido (alineado a bloques tipo home: m-i-texto-contenido) */
+.servicio-contenido-extendido {
+  width: 100%;
+  margin-top: 0.25rem;
+}
+
+.servicio-contenido-extendido .servicio-h2-destacado {
+  color: #08b6fd;
+  font-size: clamp(1.08rem, 2.2vw, 1.38rem);
+  font-weight: 480;
+  margin: 2.15rem 0 0.9rem;
+  line-height: 1.3;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid rgba(8, 184, 253, 0.32);
+  letter-spacing: 0.02em;
+}
+
+.servicio-contenido-extendido .servicio-h2-destacado:first-of-type {
+  margin-top: 1.1rem;
+}
+
+.servicio-contenido-extendido > p,
+.servicio-contenido-extendido li {
+  color: #c0c0c0;
+  font-size: 1.02rem;
+  font-weight: 280;
+  line-height: 1.62;
+}
+
+.servicio-contenido-extendido > p {
+  margin: 0.5rem 0 1rem;
+}
+
+.servicio-ventajas-list {
+  margin: 0.35rem 0 1.1rem;
+  padding-left: 1.35rem;
+  list-style: disc;
+  color: #c0c0c0;
+}
+
+.servicio-ventajas-list li {
+  margin: 0.7rem 0;
+  padding-left: 0.25rem;
+  line-height: 1.55;
+}
+
+.servicio-ventajas-list li strong {
+  color: #e8f4fc;
+  font-weight: 520;
+}
+
+.servicio-tabla-wrap {
+  overflow-x: auto;
+  margin: 0.65rem 0 1.35rem;
+  border-radius: 12px;
+  border: 1px solid rgba(8, 184, 253, 0.28);
+  background: linear-gradient(135deg, rgba(10, 41, 66, 0.5) 0%, rgba(13, 58, 90, 0.35) 100%);
+  -webkit-overflow-scrolling: touch;
+}
+
+.servicio-caracter-tabla {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.98rem;
+}
+
+.servicio-caracter-tabla th,
+.servicio-caracter-tabla td {
+  padding: 0.85rem 1rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid rgba(8, 184, 253, 0.15);
+}
+
+.servicio-caracter-tabla th {
+  color: #08b6fd;
+  font-weight: 500;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: rgba(0, 0, 0, 0.28);
+}
+
+.servicio-caracter-tabla td:first-child {
+  color: #e8f4fc;
+  font-weight: 450;
+  width: 30%;
+  min-width: 132px;
+}
+
+.servicio-caracter-tabla tr:last-child td {
+  border-bottom: none;
+}
+
+.servicio-proceso-list {
+  margin: 0.45rem 0 1.35rem;
+  padding-left: 1.35rem;
+  list-style: decimal;
+  color: #c0c0c0;
+}
+
+.servicio-proceso-list li {
+  margin: 0.95rem 0;
+  padding-left: 0.35rem;
+  line-height: 1.58;
+}
+
+.servicio-proceso-list li strong {
+  color: #08b6fd;
+  font-weight: 500;
+}
+
+.servicio-contenido-extendido .servicio-segmento-actions {
+  margin-top: 2.25rem;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .servicio-caracter-tabla th,
+  .servicio-caracter-tabla td {
+    padding: 0.65rem 0.75rem;
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 767px) {
