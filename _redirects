@@ -1,13 +1,35 @@
-# Redirecciones para Netlify
-/index.html / 301
-/servicios.html /servicios 301
-/productos.html /productos 301
-/contacto.html /contacto 301
-/turno-software.html https://turnosoftware.app/ 301
-/turno-software https://turnosoftware.app/ 301
+# Netlify: reglas específicas primero (la primera coincidencia gana)
 
-# Reescritura de URLs
-/* /index.html 200
+# Reescrituras URL limpia → archivo HTML
 /servicios /servicios.html 200
+/servicios-legacy /servicios-legacy.html 200
+/servicios-landing-pages /servicios-landing-pages.html 200
+/servicios-sitios-web /servicios-sitios-web.html 200
+/servicios-web-apps /servicios-web-apps.html 200
+/servicios-seo /servicios-seo.html 200
+/servicios-chatbots-ia /servicios-chatbots-ia.html 200
+/servicios-mantenimiento-web /servicios-mantenimiento-web.html 200
+/servicios-ia-empresas /servicios-ia-empresas.html 200
 /productos /productos.html 200
 /contacto /contacto.html 200
+/pedidos /pedidos.html 200
+/pedidos-landing /pedidosLanding.html 200
+
+# Redirecciones 301 desde .html
+/index.html / 301
+/servicios.html /servicios 301
+/servicios-legacy.html /servicios-legacy 301
+/servicios-landing-pages.html /servicios-landing-pages 301
+/servicios-sitios-web.html /servicios-sitios-web 301
+/servicios-web-apps.html /servicios-web-apps 301
+/servicios-seo.html /servicios-seo 301
+/servicios-chatbots-ia.html /servicios-chatbots-ia 301
+/servicios-mantenimiento-web.html /servicios-mantenimiento-web 301
+/servicios-ia-empresas.html /servicios-ia-empresas 301
+/productos.html /productos 301
+/contacto.html /contacto 301
+/pedidos.html /pedidos 301
+/pedidosLanding.html /pedidos-landing 301
+
+/turno-software.html https://turnosoftware.app/ 301
+/turno-software https://turnosoftware.app/ 301
