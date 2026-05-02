@@ -1708,7 +1708,8 @@ footer {
   display: grid;
   grid-template-columns: minmax(min(100%, 300px), 1fr) minmax(min(100%, 280px), 1.15fr);
   gap: 0.75rem 2.25rem;
-  align-items: start;
+  align-items: center;
+  margin-bottom: clamp(1.75rem, 4.5vw, 3rem);
 }
 
 @media (max-width: 900px) {
@@ -1737,10 +1738,10 @@ footer {
 
 .servicio-segmento-desc {
   color: #fff;
-  font-size: clamp(0.897rem, 1.5525vw, 1.0925rem);
+  font-size: clamp(1.0764rem, 1.863vw, 1.311rem);
   font-weight: 300;
   line-height: 1.55;
-  margin: 0.2rem 0 0;
+  margin: 0;
   text-align: left;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
