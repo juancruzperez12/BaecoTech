@@ -1591,19 +1591,23 @@ footer {
 
 .servicios-hub-intro h1 {
   color: #08b6fd;
-  font-weight: 400;
-  font-size: clamp(1.75rem, 4vw, 2.35rem);
+  font-weight: 700 !important;
+  font-size: clamp(2.2784em, 5.6959vw, 3.6248em);
   margin: 0.65rem 0 0.75rem;
-  text-shadow: 0 0 32px rgba(8, 184, 253, 0.2);
+  line-height: 1.12;
+  text-shadow:
+    2px 2px 4px rgba(0, 0, 0, 0.8),
+    0 0 40px rgba(8, 184, 253, 0.3);
 }
 
 .servicios-hub-intro p {
-  color: #c9d1d9;
-  font-size: 1.2rem;
-  font-weight: 280;
-  max-width: 36rem;
+  color: #fff;
+  font-size: clamp(1.2427em, 3.1069vw, 1.8642em);
+  font-weight: 300;
+  max-width: min(40rem, 92vw);
   margin: 0 auto;
-  line-height: 1.55;
+  line-height: 1.6;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
 }
 
 .servicios-hub-grid {
@@ -1642,18 +1646,21 @@ footer {
 
 .servicio-hub-card h2 {
   color: #08b6fd;
-  font-size: 1.25rem;
-  font-weight: 450;
+  font-size: clamp(1.35em, 3.1vw, 1.85em);
+  font-weight: 600;
   margin: 0 0 0.65rem;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.65);
 }
 
 .servicio-hub-card p {
-  color: #c9d1d9;
-  font-size: 1.05rem;
-  font-weight: 260;
-  line-height: 1.5;
+  color: #fff;
+  font-size: clamp(1em, 2.2vw, 1.12em);
+  font-weight: 300;
+  line-height: 1.55;
   margin: 0 0 1rem;
   flex-grow: 1;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 .servicio-hub-card .servicio-hub-ver {
@@ -1695,25 +1702,29 @@ footer {
 
 .servicio-segmento-hero {
   text-align: center;
-  max-width: 720px;
+  max-width: min(960px, 94vw);
   margin: 0 auto 0.5rem;
 }
 
+/* Título principal: misma lógica tipográfica que .m-i-texto-portada h1 */
 .servicio-segmento-main h1 {
   color: #08b6fd;
-  font-weight: 400;
-  font-size: clamp(1.45rem, 3.2vw, 2.05rem);
-  margin: 0.75rem 0 1rem;
-  line-height: 1.25;
-  text-shadow: 0 0 28px rgba(8, 184, 253, 0.22);
+  font-weight: 700 !important;
+  font-size: clamp(2.2784em, 5.6959vw, 3.6248em);
+  margin: 0.5rem 0 1rem;
+  line-height: 1.12;
+  text-shadow:
+    2px 2px 4px rgba(0, 0, 0, 0.8),
+    0 0 42px rgba(8, 184, 253, 0.35);
 }
 
 .servicio-segmento-desc {
-  color: #c9d1d9;
-  font-size: 1.22rem;
-  font-weight: 280;
-  line-height: 1.65;
+  color: #fff;
+  font-size: clamp(1.2427em, 3.1069vw, 1.8642em);
+  font-weight: 300;
+  line-height: 1.6;
   margin: 0 0 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 /* Contenido extendido (alineado a bloques tipo home: m-i-texto-contenido) */
@@ -1722,15 +1733,17 @@ footer {
   margin-top: 0.25rem;
 }
 
+/* Subtítulos de sección: escala tipo .m-i-texto-portada h2 */
 .servicio-contenido-extendido .servicio-h2-destacado {
   color: #08b6fd;
-  font-size: clamp(1.08rem, 2.2vw, 1.38rem);
-  font-weight: 480;
-  margin: 2.15rem 0 0.9rem;
-  line-height: 1.3;
-  padding-bottom: 0.45rem;
-  border-bottom: 1px solid rgba(8, 184, 253, 0.32);
+  font-size: clamp(1.5533em, 4.1423vw, 2.5889em);
+  font-weight: 300;
+  margin: 2.35rem 0 1rem;
+  line-height: 1.22;
+  padding-bottom: 0.55rem;
+  border-bottom: 1px solid rgba(8, 184, 253, 0.35);
   letter-spacing: 0.02em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .servicio-contenido-extendido .servicio-h2-destacado:first-of-type {
@@ -1739,10 +1752,11 @@ footer {
 
 .servicio-contenido-extendido > p,
 .servicio-contenido-extendido li {
-  color: #c0c0c0;
-  font-size: 1.02rem;
-  font-weight: 280;
+  color: #fff;
+  font-size: clamp(1.05em, 2.35vw, 1.22em);
+  font-weight: 300;
   line-height: 1.62;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.65);
 }
 
 .servicio-contenido-extendido > p {
@@ -1753,7 +1767,7 @@ footer {
   margin: 0.35rem 0 1.1rem;
   padding-left: 1.35rem;
   list-style: disc;
-  color: #c0c0c0;
+  color: #fff;
 }
 
 .servicio-ventajas-list li {
@@ -1763,8 +1777,8 @@ footer {
 }
 
 .servicio-ventajas-list li strong {
-  color: #e8f4fc;
-  font-weight: 520;
+  color: #fff;
+  font-weight: 650;
 }
 
 .servicio-tabla-wrap {
@@ -1779,7 +1793,7 @@ footer {
 .servicio-caracter-tabla {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.98rem;
+  font-size: clamp(1em, 2.1vw, 1.12em);
 }
 
 .servicio-caracter-tabla th,
@@ -1792,16 +1806,20 @@ footer {
 
 .servicio-caracter-tabla th {
   color: #08b6fd;
-  font-weight: 500;
-  font-size: 0.88rem;
+  font-weight: 600;
+  font-size: clamp(0.82rem, 1.8vw, 0.95rem);
   text-transform: uppercase;
   letter-spacing: 0.04em;
   background: rgba(0, 0, 0, 0.28);
 }
 
+.servicio-caracter-tabla td {
+  color: #fff;
+}
+
 .servicio-caracter-tabla td:first-child {
-  color: #e8f4fc;
-  font-weight: 450;
+  color: #fff;
+  font-weight: 600;
   width: 30%;
   min-width: 132px;
 }
@@ -1814,7 +1832,7 @@ footer {
   margin: 0.45rem 0 1.35rem;
   padding-left: 1.35rem;
   list-style: decimal;
-  color: #c0c0c0;
+  color: #fff;
 }
 
 .servicio-proceso-list li {
@@ -1825,7 +1843,31 @@ footer {
 
 .servicio-proceso-list li strong {
   color: #08b6fd;
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 1.05em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+}
+
+@media (min-width: 1920px) {
+  .servicio-segmento-main h1,
+  .servicios-hub-intro h1 {
+    font-size: 5.4828em;
+  }
+
+  .servicio-contenido-extendido .servicio-h2-destacado {
+    font-size: 4.63em;
+  }
+}
+
+@media (min-width: 2560px) {
+  .servicio-segmento-main h1,
+  .servicios-hub-intro h1 {
+    font-size: 6.701em;
+  }
+
+  .servicio-contenido-extendido .servicio-h2-destacado {
+    font-size: 5.4828em;
+  }
 }
 
 .servicio-contenido-extendido .servicio-segmento-actions {
