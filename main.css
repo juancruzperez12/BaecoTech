@@ -1754,7 +1754,7 @@ footer {
 /* Subtítulos de sección: escala tipo .m-i-texto-portada h2 */
 .servicio-contenido-extendido .servicio-h2-destacado {
   color: #08b6fd;
-  font-size: clamp(1.5533em, 4.1423vw, 2.5889em);
+  font-size: clamp(1.24264em, 3.31384vw, 2.07112em);
   font-weight: 300;
   margin: 2.35rem 0 1rem;
   line-height: 1.22;
@@ -1909,7 +1909,7 @@ footer {
   }
 
   .servicio-contenido-extendido .servicio-h2-destacado {
-    font-size: 4.63em;
+    font-size: 3.704em;
   }
 }
 
@@ -1920,7 +1920,7 @@ footer {
   }
 
   .servicio-contenido-extendido .servicio-h2-destacado {
-    font-size: 5.4828em;
+    font-size: 4.38624em;
   }
 }
 
