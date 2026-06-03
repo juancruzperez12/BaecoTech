@@ -530,6 +530,30 @@ html {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
+/* Remove cyan/blue lighting, overlays and glow behind images globally */
+/* Targets image containers and common components that add colored gradients/shadows */
+.m-i-imagen-fondo,
+.m-i-imagen-texto-contenido,
+.m-i-texto-contenido,
+.m-i-seccion-portada,
+.m-i-seccion-contenido,
+.m-i-seccion-contenido .m-i-texto-contenido,
+.m-i-imagen-texto-contenido img,
+.m-i-imagen-fondo img,
+.servicio-ventaja-card,
+.servicio-tabla-wrap,
+.servicio-hub-card,
+.servicio-hub-card *,
+.servicio-ventaja-card *,
+.servicios-hub-grid a,
+.servicios-hub-grid a * {
+  background-image: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+  filter: none !important;
+}
+
 .m-i-seccion-contenido:nth-child(3) .m-i-texto-contenido h2 {
   color: #08b6fd;
   margin-bottom: 20px;
@@ -1616,7 +1640,7 @@ footer {
 .servicio-hub-card {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(135deg, #0a2942 0%, #0d3a5a 50%, #0a2942 100%);
+  background-color: #0A2942;
   border: 1px solid rgba(8, 184, 253, 0.3);
   border-radius: 1.25rem;
   padding: 1.5rem 1.35rem;
