@@ -1620,24 +1620,18 @@ footer {
   border: 1px solid rgba(8, 184, 253, 0.3);
   border-radius: 1.25rem;
   padding: 1.5rem 1.35rem;
-  box-shadow:
-    0 12px 28px rgba(8, 184, 253, 0.15),
-    0 6px 14px rgba(0, 0, 0, 0.35);
+  box-shadow: none;
   text-decoration: none;
   color: inherit;
   transition:
     transform 0.2s ease,
-    border-color 0.2s ease,
-    box-shadow 0.2s ease;
+    border-color 0.2s ease;
 }
 
 .servicio-hub-card:hover,
 .servicio-hub-card:focus-visible {
   transform: translateY(-3px);
   border-color: rgba(8, 184, 253, 0.55);
-  box-shadow:
-    0 16px 36px rgba(8, 184, 253, 0.22),
-    0 8px 18px rgba(0, 0, 0, 0.4);
   outline: none;
 }
 
