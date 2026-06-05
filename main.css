@@ -1599,7 +1599,7 @@ footer {
 
 .servicios-hub-intro p {
   color: #fff;
-  font-size: clamp(1.2427em, 3.1069vw, 1.8642em);
+  font-size: clamp(1.0563em, 2.6409vw, 1.5846em);
   font-weight: 300;
   max-width: 100%;
   margin: 0 auto;
@@ -1636,16 +1636,16 @@ footer {
 }
 
 .servicio-hub-card h2 {
-  color: #08b6fd;
-  font-size: clamp(1.35em, 3.1vw, 1.85em);
-  font-weight: 600;
+  color: #ffffff;
+  font-size: clamp(1.55em, 3.5vw, 2.2em);
+  font-weight: 700;
   margin: 0 0 0.65rem;
   line-height: 1.2;
 }
 
 .servicio-hub-card p {
   color: #fff;
-  font-size: clamp(1em, 2.2vw, 1.12em);
+  font-size: clamp(1.15em, 2.5vw, 1.29em);
   font-weight: 300;
   line-height: 1.55;
   margin: 0 0 1rem;
