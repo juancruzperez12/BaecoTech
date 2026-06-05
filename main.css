@@ -1202,7 +1202,7 @@ footer {
 .m-i-texto-contenido h2 {
   color: #ffffff;
   margin-bottom: clamp(10px, 1.5vw, 20px);
-  font-size: clamp(2.35em, 6.34vw, 3.99em);
+  font-size: clamp(2.35em, 6.34vw, 6em);
   font-weight: 550;
 }
 
