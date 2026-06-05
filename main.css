@@ -1200,16 +1200,16 @@ footer {
 }
 
 .m-i-texto-contenido h2 {
-  color: #08b6fd;
+  color: #ffffff;
   margin-bottom: clamp(10px, 1.5vw, 20px);
-  font-size: clamp(1.077em, 2.8998vw, 1.8227em);
-  font-weight: 250;
+  font-size: clamp(1.68em, 4.53vw, 2.85em);
+  font-weight: 550;
 }
 
 .m-i-texto-contenido p {
   color: white;
   margin: 0;
-  font-size: clamp(0.8285em, 2.0252vw, 1.1046em);
+  font-size: clamp(1.16em, 2.84vw, 1.55em);
   line-height: 1.6;
   font-weight: 250;
 }
