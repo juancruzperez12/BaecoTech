@@ -1194,8 +1194,8 @@ footer {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: radial-gradient(circle at 86% 80%, rgba(74, 109, 136, 0.65), transparent 45%),
-    radial-gradient(circle at 10% 15%, rgba(74, 109, 136, 0.16), transparent 40%);
+  background: radial-gradient(circle at 86% 80%, rgba(61, 165, 224, 0.55), transparent 48%),
+    radial-gradient(circle at 10% 15%, rgba(61, 165, 224, 0.14), transparent 40%);
   animation: portada-glow-pulse 7s ease-in-out infinite;
   pointer-events: none;
 }
@@ -1229,19 +1229,19 @@ footer {
 }
 
 .m-i-texto-portada h1 {
-  color: #4a6d88;
+  color: #4bacea;
   margin-bottom: clamp(15px, 2vw, 30px);
-  font-size: clamp(1.7em, 3.6vw, 2.5em);
+  font-size: clamp(1.9em, 4.2vw, 3em);
   font-weight: 700 !important;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 2px 28px rgba(61, 165, 224, 0.5);
 }
 
 .m-i-texto-portada h2 {
-  color: #4a6d88;
+  color: #4bacea;
   margin-bottom: clamp(10px, 1.5vw, 25px);
   font-size: clamp(1.2em, 2.6vw, 1.8em);
   font-weight: 400;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 2px 20px rgba(61, 165, 224, 0.4);
 }
 
 .m-i-texto-portada p {
@@ -1250,7 +1250,7 @@ footer {
   font-size: clamp(1em, 1.8vw, 1.3em);
   line-height: 1.6;
   font-weight: 400;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 1px 4px rgba(1, 12, 30, 0.5);
 }
 
 /* Textos responsive para las secciones de contenido */
@@ -1290,7 +1290,7 @@ footer {
 
 @media (min-width: 1920px) {
   .m-i-texto-portada h1 {
-    font-size: 2.9em;
+    font-size: 3.3em;
   }
 
   .m-i-texto-portada h2 {
@@ -1312,7 +1312,7 @@ footer {
 
 @media (min-width: 2560px) {
   .m-i-texto-portada h1 {
-    font-size: 3.3em;
+    font-size: 3.7em;
   }
 
   .m-i-texto-portada h2 {
