@@ -30,23 +30,29 @@ h2 {
 }
 
 body {
-  background-color: #ffffff;
-  color: #16233a;
+  background-color: #d5d9e0;
+  color: #010c1e;
   margin: 0;
   line-height: 1.55;
 }
 /*
-BaecoTech — paleta "corporativo confiable"
+BaecoTech — paleta de marca (5 tonos, de oscuro a claro)
 
-| Color        | Variable        | HEX       | Uso                                            |
-| ------------ | --------------- | --------- | ----------------------------------------------- |
-| Azul marca   | --blue-600      | #2563EB   | Botones, links y acentos sobre fondo claro       |
-| Azul oscuro  | --blue-700      | #1D4ED8   | Hover / estado presionado sobre fondo claro      |
-| Azul claro   | --blue-400/500  | #60A5FA / #3B82F6 | Acentos sobre fondo oscuro (nav, footer)|
-| Negro        | --black         | #000000   | Fondo de nav y footer (calza con el logo)        |
-| Tinta        | --ink-900/600   | #0F172A / #475569 | Texto principal / secundario sobre claro |
-| Línea        | --line          | #E2E8F0   | Bordes sutiles                                   |
-| Fondo alt    | --bg-alt        | #F8FAFC   | Fondo de secciones alternadas                    |
+| Color            | HEX       | Uso                                                          |
+| ---------------- | --------- | ------------------------------------------------------------- |
+| Tinta            | #010c1e   | Texto principal, fondo de nav/footer/hero oscuro               |
+| Navy secundario  | #001e38   | Segundo tono oscuro: gradiente del hero, panel del dropdown    |
+| Acento           | #4a6d88   | Botones, íconos activos, acentos grandes sobre fondo oscuro    |
+| Acento (texto)   | #345068   | Variante más oscura del acento: links/títulos sobre fondo claro,
+|                  |           | y estado hover de los botones (mejor contraste para texto)     |
+| Acento claro     | #96a8b8   | Mezcla acento+fondo: hover de texto sobre fondo oscuro         |
+| Bruma            | #c6cdd7   | Fondo de tarjetas/superficies, texto secundario sobre oscuro   |
+| Fondo            | #d5d9e0   | Fondo de página, texto claro sobre fondo oscuro                |
+
+Texto secundario/muted sobre fondo claro: rgba(1, 12, 30, α) con α entre 0.42 y 0.7.
+Bordes sobre fondo claro: rgba(1, 12, 30, 0.14).
+Verde/rojo de mensajes de éxito/error se mantienen como color semántico,
+fuera de esta paleta de marca.
 */
 /*intro*/
 #logo-intro {
@@ -55,7 +61,7 @@ BaecoTech — paleta "corporativo confiable"
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000;
+  background-color: #010c1e;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,20 +100,46 @@ BaecoTech — paleta "corporativo confiable"
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: #000;
+  background-color: #010c1e;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
   padding: 5px 20px;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.08);
+  box-shadow: 0 1px 0 rgba(213, 217, 224, 0.08);
 }
 
 .logotipo {
-  display: block;
-  width: 183px;
-  height: 55px;
+  display: inline-flex;
+  align-items: center;
+  font-family: "Geist Variable", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.35em, 2.2vw, 1.7em);
+  letter-spacing: -0.01em;
+  color: #d5d9e0;
+  text-decoration: none;
+  line-height: 1;
+  white-space: nowrap;
 }
+
+.marca-acento {
+  color: #96a8b8;
+}
+
+.logotipo-sub {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.6em;
+  padding-left: 0.6em;
+  border-left: 1.5px solid rgba(213, 217, 224, 0.35);
+  font-size: 0.6em;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #d5d9e0;
+}
+
 .top-nav {
   display: flex;
   align-items: center;
@@ -122,11 +154,11 @@ BaecoTech — paleta "corporativo confiable"
   padding: 1em 1em;
   margin: 1em;
   display: flex;
-  color: #fff;
+  color: #d5d9e0;
   float: right;
   font-weight: 500;
   font-size: 1.2184em;
-  border: solid 2px #000;
+  border: solid 2px #010c1e;
   border-top: none;
   border-bottom: none;
   text-decoration: none;
@@ -145,13 +177,13 @@ BaecoTech — paleta "corporativo confiable"
   bottom: 0.45em;
   width: 60%;
   height: 2px;
-  background-color: #3b82f6;
+  background-color: #4a6d88;
   transform: translateX(-50%);
 }
 
 .navlist:hover {
-  color: #93c1ff;
-  border: solid 2px #000;
+  color: #96a8b8;
+  border: solid 2px #010c1e;
   border-top: none;
   border-bottom: none;
 }
@@ -163,9 +195,9 @@ BaecoTech — paleta "corporativo confiable"
   margin: 1em;
   display: flex;
   float: right;
-  color: #60a5fa;
+  color: #96a8b8;
   background: none;
-  border: solid 2px #000;
+  border: solid 2px #010c1e;
   border-top: none;
   border-bottom: none;
   font-size: 1.2184em;
@@ -174,8 +206,8 @@ BaecoTech — paleta "corporativo confiable"
 }
 
 .navlist-contacto:hover {
-  color: #93c1ff;
-  border: solid 2px #000;
+  color: #96a8b8;
+  border: solid 2px #010c1e;
   border-top: none;
   border-bottom: none;
 }
@@ -189,7 +221,7 @@ BaecoTech — paleta "corporativo confiable"
   display: none;
   font-size: 24.3675px;
   cursor: pointer;
-  color: white;
+  color: #d5d9e0;
 }
 
 @media (max-width: 767px) {
@@ -204,7 +236,7 @@ BaecoTech — paleta "corporativo confiable"
     justify-content: center;
     width: 100%;
     height: calc(100vh - 60px);
-    background-color: #000;
+    background-color: #010c1e;
     position: fixed;
     top: 60px;
     left: 0;
@@ -228,7 +260,7 @@ BaecoTech — paleta "corporativo confiable"
     width: 100%;
     list-style: none;
     font-size: 1.2995em;
-    color: #fff;
+    color: #d5d9e0;
     transition: color 0.3s ease;
   }
 
@@ -237,13 +269,13 @@ BaecoTech — paleta "corporativo confiable"
     width: auto;
     text-align: center;
     padding: 10px 20px;
-    color: #60a5fa;
+    color: #96a8b8;
     text-decoration: none;
     transition: color 0.3s ease;
   }
 
   .nav-item a.navlist:hover {
-    color: #93c1ff;
+    color: #96a8b8;
   }
 
   .navlist-contacto {
@@ -253,7 +285,7 @@ BaecoTech — paleta "corporativo confiable"
     margin: auto 1em;
     padding: 10px 20px;
     background: none;
-    color: #60a5fa;
+    color: #96a8b8;
     text-decoration: none;
     border-radius: 0;
     border: none;
@@ -269,23 +301,18 @@ BaecoTech — paleta "corporativo confiable"
 
   .top-nav .nav-item > a.navlist.active,
   .top-nav .nav-item > a.navlist-contacto.active {
-    background-color: rgba(59, 130, 246, 0.18);
+    background-color: rgba(74, 109, 136, 0.18);
     border-radius: 10px;
-    box-shadow: inset 0 0 0 1px rgba(96, 165, 250, 0.45);
+    box-shadow: inset 0 0 0 1px rgba(150, 168, 184, 0.45);
   }
 
   .top-nav .nav-item > a.navlist-contacto.active {
-    background-color: rgba(59, 130, 246, 0.16);
+    background-color: rgba(74, 109, 136, 0.16);
   }
 
   .logotipo {
-    width: 183px;
-    height: 55px;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #000;
+    margin: auto;
+    font-size: 1.4em;
   }
 }
 @media (max-height: 400px) {
@@ -295,10 +322,6 @@ BaecoTech — paleta "corporativo confiable"
   }
 }
 @media (min-width: 768px) and (max-width: 1920px) {
-  .logotipo {
-    width: 183px;
-    height: 55px;
-  }
   .navlist {
     padding: 1em 0.5em;
     margin: 0.5em;
@@ -311,10 +334,6 @@ BaecoTech — paleta "corporativo confiable"
   }
 }
 @media (min-width: 1921px) {
-  .logotipo {
-    width: 183px;
-    height: 55px;
-  }
   .navlist {
     padding: 1em 1em;
     margin: 1em;
@@ -333,21 +352,21 @@ BaecoTech — paleta "corporativo confiable"
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: #d5d9e0;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
+  background: #c6cdd7;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+  background: rgba(1, 12, 30, 0.42);
 }
 
 html {
   font-size: 84.4738%;
   scrollbar-width: thin;
-  scrollbar-color: #cbd5e1 #f1f5f9;
+  scrollbar-color: #c6cdd7 #d5d9e0;
 }
 
 /* cierra scrollbar */
@@ -405,10 +424,10 @@ html {
   .m-i-texto-contenido {
   position: relative;
   z-index: 2;
-  background: rgba(15, 23, 42, 0.75);
+  background: rgba(1, 12, 30, 0.75);
   padding: 30px;
   border-radius: 10px;
-  color: white;
+  color: #d5d9e0;
   text-align: center;
   max-width: 500px;
   margin: 0 auto;
@@ -418,7 +437,7 @@ html {
   + .m-i-seccion-contenido
   .m-i-texto-contenido
   h2 {
-  color: #60a5fa;
+  color: #4a6d88;
   margin-bottom: 15px;
 }
 
@@ -426,19 +445,19 @@ html {
   + .m-i-seccion-contenido
   .m-i-texto-contenido
   p {
-  color: white;
+  color: #d5d9e0;
   margin: 0;
 }
 
 .m-i-seccion-contenido h1 {
   text-align: center;
-  color: #2563eb;
+  color: #345068;
   display: block;
   padding: 2em 0em 0em 0em;
 }
 .m-i-texto-contenido {
   flex: 1;
-  color: #475569;
+  color: rgba(1, 12, 30, 0.68);
   font-size: 0.8907em;
   font-weight: 400;
   text-decoration: none;
@@ -447,7 +466,7 @@ html {
 }
 
 .m-i-texto-contenido h2 {
-  color: #0f172a;
+  color: #010c1e;
 }
 
 .proyecto-link {
@@ -457,13 +476,13 @@ html {
 }
 
 .proyecto-link:hover {
-  color: #2563eb;
+  color: #345068;
 }
 
 .subrayado-celeste {
   position: relative;
   display: inline-block;
-  color: #2563eb;
+  color: #345068;
 }
 
 .subrayado-celeste::after {
@@ -473,7 +492,7 @@ html {
   bottom: -0.15em;
   width: 100%;
   height: 2px;
-  background: #2563eb;
+  background: #345068;
   border-radius: 999px;
 }
 
@@ -484,8 +503,8 @@ html {
   margin: 0;
   border-radius: 0.75em;
   box-shadow:
-    0 1px 2px rgba(15, 23, 42, 0.06),
-    0 12px 24px rgba(15, 23, 42, 0.1);
+    0 1px 2px rgba(1, 12, 30, 0.06),
+    0 12px 24px rgba(1, 12, 30, 0.1);
 }
 
 /* Estilos específicos para la segunda sección (primera imagen) */
@@ -518,24 +537,24 @@ html {
 .m-i-seccion-contenido:nth-child(3) .m-i-texto-contenido {
   position: relative;
   z-index: 2;
-  background: rgba(15, 23, 42, 0.85);
+  background: rgba(1, 12, 30, 0.85);
   padding: 40px;
   border-radius: 15px;
-  color: white;
+  color: #d5d9e0;
   text-align: center;
   max-width: 600px;
   margin: 0 auto;
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.35);
+  box-shadow: 0 10px 30px rgba(1, 12, 30, 0.35);
 }
 
 .m-i-seccion-contenido:nth-child(3) .m-i-texto-contenido h2 {
-  color: #60a5fa;
+  color: #4a6d88;
   margin-bottom: 20px;
   font-size: 2.1444em;
 }
 
 .m-i-seccion-contenido:nth-child(3) .m-i-texto-contenido p {
-  color: white;
+  color: #d5d9e0;
   margin: 0;
   font-size: 1.2995em;
   line-height: 1.6;
@@ -565,14 +584,14 @@ html {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f8fafc;
+  background-color: #d5d9e0;
 }
 
 .titulo-de-contacto {
   text-align: center;
   margin-top: 10em;
   margin-bottom: 4em;
-  color: #0f172a;
+  color: #010c1e;
 }
 
 /* FIN CSS DE CONTACTO */
@@ -584,13 +603,13 @@ html {
   margin-top: 30px;
   margin-bottom: 100px;
   padding: 20px;
-  background: #ffffff;
+  background: #c6cdd7;
   box-shadow:
-    0 1px 2px rgba(15, 23, 42, 0.04),
-    0 16px 40px rgba(15, 23, 42, 0.1);
+    0 1px 2px rgba(1, 12, 30, 0.04),
+    0 16px 40px rgba(1, 12, 30, 0.1);
   position: relative;
   font-family: "Geist Variable", sans-serif;
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(1, 12, 30, 0.14);
   border-radius: 1.25em;
 }
 
@@ -598,7 +617,7 @@ html {
   text-align: center;
   margin-top: 0;
   margin-bottom: 2em;
-  color: #0f172a;
+  color: #010c1e;
   font-size: 1.9494em;
   font-weight: 650;
 }
@@ -612,20 +631,20 @@ html {
 
 .input-form {
   padding: 20px;
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
+  background: #d5d9e0;
+  border: 1px solid rgba(1, 12, 30, 0.14);
   margin-bottom: 22px;
-  color: #16233a;
+  color: #010c1e;
   border-radius: 0.7em;
 }
 
 .input-form::placeholder {
-  color: #94a3b8;
+  color: rgba(1, 12, 30, 0.42);
   opacity: 1;
 }
 
 .input-form:focus {
-  outline: 2px solid #2563eb;
+  outline: 2px solid #4a6d88;
   outline-offset: -1px;
 }
 
@@ -637,26 +656,26 @@ textarea {
   outline: none;
   resize: none;
   font-size: 1.2184em;
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(1, 12, 30, 0.14);
   font-family: "Geist Variable", sans-serif;
-  background-color: #f8fafc;
-  color: #16233a;
+  background-color: #d5d9e0;
+  color: #010c1e;
   border-radius: 0.7em;
 }
 
 textarea:focus {
-  outline: 2px solid #2563eb;
+  outline: 2px solid #4a6d88;
   outline-offset: -1px;
 }
 
 textarea::placeholder {
-  color: #94a3b8;
+  color: rgba(1, 12, 30, 0.42);
   opacity: 1;
 }
 
 .submit-form {
-  background: #2563eb;
-  color: #fff;
+  background: #4a6d88;
+  color: #d5d9e0;
   padding: 15px 30px;
   cursor: pointer;
   border: none;
@@ -664,14 +683,14 @@ textarea::placeholder {
   border-radius: 0.8em;
   font-size: 1.2995em;
   font-weight: 600;
-  box-shadow: 0px 8px 20px rgba(37, 99, 235, 0.25);
+  box-shadow: 0px 8px 20px rgba(74, 109, 136, 0.25);
   transition: all 0.3s ease;
 }
 
 .submit-form:hover {
-  background: #1d4ed8;
+  background: #345068;
   transform: translateY(-2px);
-  box-shadow: 0px 12px 25px rgba(37, 99, 235, 0.35);
+  box-shadow: 0px 12px 25px rgba(74, 109, 136, 0.35);
 }
 
 /* FIN CSS DE CONTACTO */
@@ -686,18 +705,18 @@ textarea::placeholder {
 }
 
 .caja {
-  background: #ffffff;
+  background: #c6cdd7;
   padding: 1em;
   width: 32%;
   text-align: center;
   display: flex;
   flex-direction: column;
   border-radius: 1.25em;
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(1, 12, 30, 0.14);
   box-shadow:
-    0 1px 2px rgba(15, 23, 42, 0.04),
-    0 16px 32px rgba(15, 23, 42, 0.08);
-  color: #16233a;
+    0 1px 2px rgba(1, 12, 30, 0.04),
+    0 16px 32px rgba(1, 12, 30, 0.08);
+  color: #010c1e;
   margin: 2.5em;
   position: relative;
 }
@@ -707,17 +726,17 @@ textarea::placeholder {
   font-weight: 900;
   text-align: center;
   margin: 0.2em;
-  color: #2563eb;
+  color: #345068;
 }
 
 .caja .titulo-plan {
   font-family: "Geist Variable", sans-serif;
   font-weight: 700 !important;
-  color: #0f172a;
+  color: #010c1e;
 }
 
 .precio-actual {
-  color: #2563eb;
+  color: #345068;
   letter-spacing: 0.02em;
   font-size: 5.832em;
 }
@@ -726,14 +745,14 @@ textarea::placeholder {
   margin: 0;
   font-size: 1.1912em;
   font-weight: 400;
-  color: #94a3b8;
+  color: rgba(1, 12, 30, 0.42);
   text-decoration: line-through;
 }
 
 .texto-servicio-valido {
   margin-top: 0;
   margin-bottom: 0;
-  color: #475569;
+  color: rgba(1, 12, 30, 0.68);
 }
 
 .caja ul {
@@ -750,11 +769,11 @@ textarea::placeholder {
   text-decoration: none;
   text-align: left;
   padding-left: 0.5em;
-  color: #33415c;
+  color: rgba(1, 12, 30, 0.7);
 }
 
 .caja ul li a {
-  color: #2563eb;
+  color: #345068;
   text-decoration: underline;
   font-weight: 500;
 }
@@ -762,11 +781,11 @@ textarea::placeholder {
 .boton-contacto {
   display: inline-block;
   padding: 1em 2em;
-  background: #2563eb;
-  color: #fff;
+  background: #4a6d88;
+  color: #d5d9e0;
   text-decoration: none;
   border-radius: 0.8em;
-  box-shadow: 0px 8px 20px rgba(37, 99, 235, 0.25);
+  box-shadow: 0px 8px 20px rgba(74, 109, 136, 0.25);
   margin-top: auto;
   font-size: 1.6245em;
   font-weight: 550;
@@ -885,9 +904,9 @@ textarea::placeholder {
   background: linear-gradient(
     90deg,
     transparent 0%,
-    rgba(37, 99, 235, 0.35) 20%,
-    rgba(37, 99, 235, 0.5) 50%,
-    rgba(37, 99, 235, 0.35) 80%,
+    rgba(74, 109, 136, 0.35) 20%,
+    rgba(74, 109, 136, 0.5) 50%,
+    rgba(74, 109, 136, 0.35) 80%,
     transparent 100%
   );
   margin: 2em auto;
@@ -901,9 +920,9 @@ textarea::placeholder {
   background: linear-gradient(
     90deg,
     transparent 0%,
-    rgba(37, 99, 235, 0.25) 30%,
-    rgba(37, 99, 235, 0.4) 50%,
-    rgba(37, 99, 235, 0.25) 70%,
+    rgba(74, 109, 136, 0.25) 30%,
+    rgba(74, 109, 136, 0.4) 50%,
+    rgba(74, 109, 136, 0.25) 70%,
     transparent 100%
   );
   margin: 1em auto;
@@ -930,11 +949,11 @@ textarea::placeholder {
 .boton-contacto-central {
   display: inline-block;
   padding: 0.55em 1.3em;
-  background: #2563eb;
-  color: #fff;
+  background: #4a6d88;
+  color: #d5d9e0;
   text-decoration: none;
   border-radius: 0.8em;
-  box-shadow: 0px 10px 24px rgba(37, 99, 235, 0.28);
+  box-shadow: 0px 10px 24px rgba(74, 109, 136, 0.28);
   font-size: 1.6245em;
   font-weight: 600;
   text-align: center;
@@ -946,9 +965,9 @@ textarea::placeholder {
 }
 
 .boton-contacto-central:hover {
-  color: #fff;
-  background: #1d4ed8;
-  box-shadow: 0px 6px 16px rgba(37, 99, 235, 0.32);
+  color: #d5d9e0;
+  background: #345068;
+  box-shadow: 0px 6px 16px rgba(74, 109, 136, 0.32);
   transform: translateY(-2px);
 }
 
@@ -957,7 +976,7 @@ textarea::placeholder {
 }
 
 .boton-contacto-central:focus-visible {
-  outline: 2px solid rgba(37, 99, 235, 0.8);
+  outline: 2px solid rgba(74, 109, 136, 0.8);
   outline-offset: 3px;
 }
 
@@ -966,14 +985,14 @@ textarea::placeholder {
   text-align: center;
   margin-top: 10em;
   margin-bottom: 4em;
-  color: #0f172a;
+  color: #010c1e;
 }
 
 .titulo-de-contacto h1 {
   font-size: 1.9em;
   font-weight: 700;
   margin-bottom: 1em;
-  color: #0f172a;
+  color: #010c1e;
 }
 
 .divisor-redes {
@@ -982,9 +1001,9 @@ textarea::placeholder {
   background: linear-gradient(
     90deg,
     transparent 0%,
-    rgba(37, 99, 235, 0.35) 20%,
-    rgba(37, 99, 235, 0.5) 50%,
-    rgba(37, 99, 235, 0.35) 80%,
+    rgba(74, 109, 136, 0.35) 20%,
+    rgba(74, 109, 136, 0.5) 50%,
+    rgba(74, 109, 136, 0.35) 80%,
     transparent 100%
   );
   margin: 2em auto;
@@ -1009,13 +1028,13 @@ textarea::placeholder {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #0f172a;
+  background: #010c1e;
   transition: all 0.3s ease;
   padding: 10px;
 }
 
 .red-social:hover {
-  background: #2563eb;
+  background: #4a6d88;
   transform: scale(1.1);
 }
 
@@ -1031,7 +1050,7 @@ textarea::placeholder {
 footer {
   width: 100%;
   padding: 10em 5em 1em 5em;
-  background-color: #000;
+  background-color: #010c1e;
 }
 
 .contenedor-footer {
@@ -1047,7 +1066,7 @@ footer {
 }
 
 .footer-link {
-  color: #cbd5e1;
+  color: #c6cdd7;
   font-weight: 400;
   font-size: 1.0831em;
   text-decoration: none;
@@ -1056,11 +1075,11 @@ footer {
 }
 
 .footer-link:hover {
-  color: #ffffff;
+  color: #d5d9e0;
 }
 
 .derechos {
-  color: #94a3b8;
+  color: rgba(213, 217, 224, 0.55);
   font-size: 1.0831em;
   font-weight: 400;
   text-align: center;
@@ -1068,7 +1087,12 @@ footer {
 }
 
 .derechos a {
-  color: #60a5fa;
+  display: inline-flex;
+  font-family: "Geist Variable", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #d5d9e0;
   text-decoration: none;
 }
 
@@ -1106,14 +1130,10 @@ footer {
     margin: 10px 10px;
   }
   .footer-link:hover {
-    color: #ffffff;
+    color: #d5d9e0;
   }
   .derechos {
     margin-top: 15px;
-  }
-  .derechos a {
-    color: #60a5fa;
-    text-decoration: none;
   }
 }
 /* cierra css footer */
@@ -1129,10 +1149,10 @@ footer {
   justify-content: center;
   overflow: hidden;
   border-radius: 16px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(1, 12, 30, 0.14);
   box-shadow:
-    0 1px 2px rgba(15, 23, 42, 0.04),
-    0 24px 48px rgba(15, 23, 42, 0.12);
+    0 1px 2px rgba(1, 12, 30, 0.04),
+    0 24px 48px rgba(1, 12, 30, 0.12);
 }
 
 .m-i-imagen-fondo {
@@ -1155,18 +1175,18 @@ footer {
 
 /* Portada sin foto: fondo generado por código (gradiente + grilla + glow) */
 .m-i-seccion-portada--fx {
-  background: linear-gradient(160deg, #0c1526 0%, #070c16 55%, #000000 100%);
+  background: linear-gradient(160deg, #001e38 0%, #010c1e 55%, #010c1e 100%);
 }
 
 .m-i-portada-grid {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-image: linear-gradient(rgba(213, 217, 224, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(213, 217, 224, 0.06) 1px, transparent 1px);
   background-size: 42px 42px;
-  -webkit-mask-image: radial-gradient(ellipse 70% 65% at 50% 42%, #000 0%, transparent 78%);
-  mask-image: radial-gradient(ellipse 70% 65% at 50% 42%, #000 0%, transparent 78%);
+  -webkit-mask-image: radial-gradient(ellipse 70% 65% at 50% 42%, #010c1e 0%, transparent 78%);
+  mask-image: radial-gradient(ellipse 70% 65% at 50% 42%, #010c1e 0%, transparent 78%);
   pointer-events: none;
 }
 
@@ -1174,8 +1194,8 @@ footer {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: radial-gradient(circle at 86% 80%, rgba(59, 130, 246, 0.65), transparent 45%),
-    radial-gradient(circle at 10% 15%, rgba(37, 99, 235, 0.16), transparent 40%);
+  background: radial-gradient(circle at 86% 80%, rgba(74, 109, 136, 0.65), transparent 45%),
+    radial-gradient(circle at 10% 15%, rgba(74, 109, 136, 0.16), transparent 40%);
   animation: portada-glow-pulse 7s ease-in-out infinite;
   pointer-events: none;
 }
@@ -1203,13 +1223,13 @@ footer {
   z-index: 2;
   padding: clamp(30px, 4vw, 60px);
   border-radius: 20px;
-  color: white;
+  color: #d5d9e0;
   text-align: left;
   max-width: min(900px, 90vw);
 }
 
 .m-i-texto-portada h1 {
-  color: #60a5fa;
+  color: #4a6d88;
   margin-bottom: clamp(15px, 2vw, 30px);
   font-size: clamp(1.7em, 3.6vw, 2.5em);
   font-weight: 700 !important;
@@ -1217,7 +1237,7 @@ footer {
 }
 
 .m-i-texto-portada h2 {
-  color: #60a5fa;
+  color: #4a6d88;
   margin-bottom: clamp(10px, 1.5vw, 25px);
   font-size: clamp(1.2em, 2.6vw, 1.8em);
   font-weight: 400;
@@ -1225,7 +1245,7 @@ footer {
 }
 
 .m-i-texto-portada p {
-  color: white;
+  color: #d5d9e0;
   margin: 0;
   font-size: clamp(1em, 1.8vw, 1.3em);
   line-height: 1.6;
@@ -1240,14 +1260,14 @@ footer {
 }
 
 .m-i-texto-contenido h2 {
-  color: #0f172a;
+  color: #010c1e;
   margin-bottom: clamp(10px, 1.5vw, 20px);
   font-size: clamp(1.7em, 3vw, 2.4em);
   font-weight: 650;
 }
 
 .m-i-texto-contenido p {
-  color: #475569;
+  color: rgba(1, 12, 30, 0.68);
   margin: 0;
   font-size: clamp(1em, 1.6vw, 1.15em);
   line-height: 1.6;
@@ -1333,18 +1353,18 @@ footer {
 /* Efecto de sobresalir para las imágenes de las secciones de contenido */
 .m-i-seccion-contenido .m-i-imagen-texto-contenido {
   border-radius: 16px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(1, 12, 30, 0.14);
   box-shadow:
-    0 1px 2px rgba(15, 23, 42, 0.04),
-    0 20px 40px rgba(15, 23, 42, 0.12);
+    0 1px 2px rgba(1, 12, 30, 0.04),
+    0 20px 40px rgba(1, 12, 30, 0.12);
   transition: all 0.3s ease;
 }
 
 .m-i-seccion-contenido .m-i-imagen-texto-contenido:hover {
   transform: translateY(-4px);
   box-shadow:
-    0 1px 2px rgba(15, 23, 42, 0.04),
-    0 28px 48px rgba(15, 23, 42, 0.16);
+    0 1px 2px rgba(1, 12, 30, 0.04),
+    0 28px 48px rgba(1, 12, 30, 0.16);
 }
 
 .m-i-seccion-contenido .m-i-imagen-texto-contenido img {
@@ -1430,7 +1450,7 @@ footer {
 .submit-form:disabled {
   opacity: 0.6;
   cursor: not-allowed;
-  background: #94a3b8;
+  background: rgba(1, 12, 30, 0.42);
 }
 
 /* Estilos para reCAPTCHA */
@@ -1479,7 +1499,7 @@ footer {
 .nav-dropdown-link {
   display: block;
   padding: 0.65em 1.1em;
-  color: #dbeafe;
+  color: #c6cdd7;
   text-decoration: none;
   font-size: 1.06rem;
   font-weight: 450;
@@ -1492,16 +1512,16 @@ footer {
 
 .nav-dropdown-link:hover,
 .nav-dropdown-link:focus-visible {
-  background: rgba(59, 130, 246, 0.16);
-  color: #60a5fa;
-  border-left-color: #60a5fa;
+  background: rgba(74, 109, 136, 0.16);
+  color: #96a8b8;
+  border-left-color: #96a8b8;
   outline: none;
 }
 
 .nav-dropdown-link.active {
-  color: #60a5fa;
-  background: rgba(59, 130, 246, 0.14);
-  border-left-color: #60a5fa;
+  color: #96a8b8;
+  background: rgba(74, 109, 136, 0.14);
+  border-left-color: #96a8b8;
 }
 
 @media (min-width: 768px) {
@@ -1515,8 +1535,8 @@ footer {
     left: 50%;
     transform: translateX(-50%);
     min-width: 300px;
-    background: #0a0f18;
-    border: 1px solid rgba(59, 130, 246, 0.3);
+    background: #001e38;
+    border: 1px solid rgba(74, 109, 136, 0.3);
     border-radius: 14px;
     padding: 0.4rem 0;
     box-shadow: 0 18px 48px rgba(0, 0, 0, 0.55);
@@ -1575,9 +1595,9 @@ footer {
     max-width: 100%;
     margin-top: 4px;
     padding: 4px 0 8px;
-    background: rgba(255, 255, 255, 0.04);
+    background: rgba(213, 217, 224, 0.04);
     border-radius: 10px;
-    border: 1px solid rgba(59, 130, 246, 0.22);
+    border: 1px solid rgba(74, 109, 136, 0.22);
   }
 
   .nav-dropdown.nav-dropdown--mobile-open .nav-dropdown-panel {
@@ -1592,14 +1612,14 @@ footer {
   .nav-dropdown-link {
     text-align: center;
     border-left: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(213, 217, 224, 0.1);
     font-size: 1.12rem;
     padding: 0.75em 1rem;
   }
 
   .nav-dropdown-link.active {
     border-left: none;
-    background: rgba(59, 130, 246, 0.16);
+    background: rgba(74, 109, 136, 0.16);
   }
 
   .nav-dropdown-link:last-of-type {
@@ -1622,7 +1642,7 @@ footer {
 }
 
 .servicios-hub-intro h1 {
-  color: #0f172a;
+  color: #010c1e;
   font-weight: 700 !important;
   font-size: clamp(1.7em, 3.6vw, 2.5em);
   margin: 0.65rem 0 0.75rem;
@@ -1630,7 +1650,7 @@ footer {
 }
 
 .servicios-hub-intro p {
-  color: #475569;
+  color: rgba(1, 12, 30, 0.68);
   font-size: clamp(0.98em, 1.6vw, 1.15em);
   font-weight: 400;
   max-width: 100%;
@@ -1647,13 +1667,13 @@ footer {
 .servicio-hub-card {
   display: flex;
   flex-direction: column;
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
+  background: #c6cdd7;
+  border: 1px solid rgba(1, 12, 30, 0.14);
   border-radius: 1rem;
   padding: 1.5rem 1.35rem;
   box-shadow:
-    0 1px 2px rgba(15, 23, 42, 0.04),
-    0 10px 24px rgba(15, 23, 42, 0.06);
+    0 1px 2px rgba(1, 12, 30, 0.04),
+    0 10px 24px rgba(1, 12, 30, 0.06);
   text-decoration: none;
   color: inherit;
   transition:
@@ -1665,15 +1685,15 @@ footer {
 .servicio-hub-card:hover,
 .servicio-hub-card:focus-visible {
   transform: translateY(-3px);
-  border-color: #93c1ff;
+  border-color: #4a6d88;
   box-shadow:
-    0 1px 2px rgba(15, 23, 42, 0.04),
-    0 16px 32px rgba(15, 23, 42, 0.1);
+    0 1px 2px rgba(1, 12, 30, 0.04),
+    0 16px 32px rgba(1, 12, 30, 0.1);
   outline: none;
 }
 
 .servicio-hub-card h2 {
-  color: #0f172a;
+  color: #010c1e;
   font-size: clamp(1.25em, 1.9vw, 1.5em);
   font-weight: 700;
   margin: 0 0 0.65rem;
@@ -1681,7 +1701,7 @@ footer {
 }
 
 .servicio-hub-card p {
-  color: #475569;
+  color: rgba(1, 12, 30, 0.68);
   font-size: clamp(0.95em, 1.3vw, 1.02em);
   font-weight: 400;
   line-height: 1.55;
@@ -1690,7 +1710,7 @@ footer {
 }
 
 .servicio-hub-card .servicio-hub-ver {
-  color: #2563eb;
+  color: #345068;
   font-size: 0.9em;
   font-weight: 600;
 }
@@ -1699,7 +1719,7 @@ footer {
   text-align: center;
   margin-top: 3rem;
   padding-top: 2rem;
-  border-top: 1px solid #e2e8f0;
+  border-top: 1px solid rgba(1, 12, 30, 0.14);
 }
 
 .pagina-servicios-hub .servicios-hub-archivo {
@@ -1707,15 +1727,15 @@ footer {
 }
 
 .servicios-hub-archivo a {
-  color: #64748b;
+  color: rgba(1, 12, 30, 0.55);
   font-size: 0.9em;
   font-weight: 450;
   text-decoration: underline;
-  text-decoration-color: rgba(37, 99, 235, 0.35);
+  text-decoration-color: rgba(74, 109, 136, 0.35);
 }
 
 .servicios-hub-archivo a:hover {
-  color: #2563eb;
+  color: #345068;
 }
 
 /* Página de un segmento */
@@ -1754,7 +1774,7 @@ footer {
 
 /* Título principal: misma lógica tipográfica que .m-i-texto-portada h1 */
 .servicio-segmento-main h1 {
-  color: #0f172a;
+  color: #010c1e;
   font-weight: 700 !important;
   font-size: clamp(1.6em, 2.6vw, 2.15em);
   margin: 0.5rem 0 1rem;
@@ -1767,7 +1787,7 @@ footer {
 }
 
 .servicio-segmento-desc {
-  color: #475569;
+  color: rgba(1, 12, 30, 0.68);
   font-size: clamp(1rem, 1.3vw, 1.15rem);
   font-weight: 400;
   line-height: 1.55;
@@ -1783,13 +1803,13 @@ footer {
 
 /* Subtítulos de sección: escala tipo .m-i-texto-portada h2 */
 .servicio-contenido-extendido .servicio-h2-destacado {
-  color: #1d4ed8;
+  color: #345068;
   font-size: clamp(1.15em, 1.7vw, 1.45em);
   font-weight: 650;
   margin: 2.35rem 0 1rem;
   line-height: 1.22;
   padding-bottom: 0.55rem;
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid rgba(1, 12, 30, 0.14);
   letter-spacing: 0.01em;
 }
 
@@ -1799,7 +1819,7 @@ footer {
 
 .servicio-contenido-extendido > p,
 .servicio-contenido-extendido li {
-  color: #33415c;
+  color: rgba(1, 12, 30, 0.7);
   font-size: clamp(0.98em, 1.2vw, 1.05em);
   font-weight: 400;
   line-height: 1.62;
@@ -1822,8 +1842,8 @@ footer {
   flex-direction: row;
   align-items: center;
   gap: 0.85rem 1rem;
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
+  background: #d5d9e0;
+  border: 1px solid rgba(1, 12, 30, 0.14);
   border-radius: 1rem;
   padding: 1.25rem 1.15rem;
   box-shadow: none;
@@ -1832,7 +1852,7 @@ footer {
 }
 
 .servicio-ventaja-titulo {
-  color: #1d4ed8;
+  color: #345068;
   /* +15% respecto a clamp(0.78rem, 1.35vw, 0.92rem) */
   font-size: clamp(0.897rem, 1.5525vw, 1.058rem);
   font-weight: 650;
@@ -1845,7 +1865,7 @@ footer {
 }
 
 .servicio-ventaja-desc {
-  color: #475569;
+  color: rgba(1, 12, 30, 0.68);
   font-size: clamp(0.82rem, 1.45vw, 0.98rem);
   font-weight: 400;
   line-height: 1.55;
@@ -1867,8 +1887,8 @@ footer {
   overflow-x: auto;
   margin: 0.65rem 0 1.35rem;
   border-radius: 12px;
-  border: 1px solid #e2e8f0;
-  background: #ffffff;
+  border: 1px solid rgba(1, 12, 30, 0.14);
+  background: #c6cdd7;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -1883,24 +1903,24 @@ footer {
   padding: 0.85rem 1rem;
   text-align: left;
   vertical-align: top;
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid rgba(1, 12, 30, 0.14);
 }
 
 .servicio-caracter-tabla th {
-  color: #1d4ed8;
+  color: #345068;
   font-weight: 650;
   font-size: clamp(0.82rem, 1.8vw, 0.95rem);
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  background: #f8fafc;
+  background: #d5d9e0;
 }
 
 .servicio-caracter-tabla td {
-  color: #33415c;
+  color: rgba(1, 12, 30, 0.7);
 }
 
 .servicio-caracter-tabla td:first-child {
-  color: #0f172a;
+  color: #010c1e;
   font-weight: 650;
   width: 30%;
   min-width: 132px;
@@ -1914,7 +1934,7 @@ footer {
   margin: 0.45rem 0 1.35rem;
   padding-left: 1.35rem;
   list-style: decimal;
-  color: #33415c;
+  color: rgba(1, 12, 30, 0.7);
 }
 
 .servicio-proceso-list li {
@@ -1924,7 +1944,7 @@ footer {
 }
 
 .servicio-proceso-list li strong {
-  color: #1d4ed8;
+  color: #345068;
   font-weight: 700;
   font-size: 1.05em;
 }
@@ -1987,14 +2007,14 @@ footer {
 }
 
 .servicio-segmento-volver {
-  color: #64748b;
+  color: rgba(1, 12, 30, 0.55);
   text-decoration: none;
   font-size: 0.95em;
   font-weight: 450;
 }
 
 .servicio-segmento-volver:hover {
-  color: #2563eb;
+  color: #345068;
 }
 
 .legacy-archivo-banner {
@@ -2007,16 +2027,16 @@ footer {
   margin: 0;
   padding: 0.85rem 1.1rem;
   border-radius: 10px;
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
-  color: #475569;
+  background: #d5d9e0;
+  border: 1px solid rgba(1, 12, 30, 0.14);
+  color: rgba(1, 12, 30, 0.68);
   font-size: 0.92em;
   text-align: center;
   font-weight: 450;
 }
 
 .legacy-archivo-banner a {
-  color: #2563eb;
+  color: #345068;
 }
 
 /* Hub / segmentos / legacy: columna mínima 100vh y pie al pie de la ventana cuando hay poco contenido */
